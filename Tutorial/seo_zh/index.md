@@ -416,7 +416,115 @@
  * [ ] (进阶) 检查了页面速度和移动端友好性？
  * [ ] (进阶) 考虑了 Schema 标记？
 
-## 4、技术 SEO
+## 4、页面优化
+
+### 极速版 (5分钟搞定)
+
+1.  **查收录:** 去 [Google Search Console](https://search.google.com/search-console/about) (免费，后面简称 GSC)，用 "网址检查" 功能看看你的重要页面 Google 能不能找到。
+2.  **修死链:** 如果你改过网址或删过页面，用 [Ahrefs Webmaster Tools](https://ahrefs.com/webmaster-tools) (免费，后面简称 AWT) 找到那些变成 404 但以前有外部链接的页面，把它们用 301 重定向到新页面。
+3.  **加内链:** 在文章里提到其他相关内容时，加个链接指向你网站内对应的页面。用 AWT 的 "链接机会" 报告找找哪里可以加。
+4.  **用 HTTPS:** 看看你的网址是不是 `https://` 开头，如果不是，赶紧搞定 (通常需要服务器配置)。
+5.  **适配移动端:** 用 [Google Mobile-Friendly Test](https://search.google.com/test/mobile-friendly) 或 GSC 的 "移动可用性" 报告，确保手机用户访问体验良好。
+
+---
+
+### 详细操作
+
+#### 第一步：速胜要素 (优先搞定这些)
+
+*   **检查页面是否被收录 (Indexability):**
+    *   **目标:** 确保你想让用户看到的页面，Google 确实能找到并收录进它的数据库。
+    *   **动作:**
+        1.  打开 [Google Search Console](https://search.google.com/search-console/about)。
+        2.  使用顶部的 "网址检查" 工具，输入你想检查的页面 URL，看 Google 是否已收录，以及它看到的版本是怎样的。
+        3.  (或者) 查看左侧菜单的 "覆盖率" 报告，了解整个网站的收录情况，看有没有错误或被排除的页面。
+        4.  (可选免费工具) 在 [Ahrefs Webmaster Tools](https://ahrefs.com/webmaster-tools) 中运行 Site Audit (网站诊断)，查看 "Indexability" (可索引性) 报告，它会列出所有无法被索引的页面和原因。
+    *   **工具:** Google Search Console, Ahrefs Webmaster Tools (Site Audit)
+
+*   **回收丢失的链接权重 (Link Reclamation via Redirects):**
+    *   **目标:** 网站改版、删除页面或更改 URL 后，一些指向旧 URL 的外部链接就失效了 (变成 404 Not Found)。通过重定向，可以把这些链接的价值"捡回来"。
+    *   **动作:**
+        1.  打开 [Ahrefs Webmaster Tools](https://ahrefs.com/webmaster-tools)。
+        2.  进入 Site Explorer (网站分析) 部分 (AWT 免费版提供有限功能，但够用)。
+        3.  输入你的域名。
+        4.  在左侧菜单找到 "页面" -> "Best by links" (按反链数量排序)。
+        5.  添加一个 HTTP 状态过滤器，选择 "404 not found"。
+        6.  查看列表，找到那些有很多 "Referring domains" (引用域) 的 404 页面。
+        7.  对于每个有价值的 404 页面，找到现在网站上内容最相关的新页面 (或者首页)。
+        8.  设置 301 重定向，把旧的 404 URL 指向新的相关页面。 (如何设置 301 取决于你的网站平台和服务器，可能需要搜索具体教程或寻求技术帮助)。
+    *   **工具:** Ahrefs Webmaster Tools (Site Explorer)
+    *   **例子效果 (来自原文):** 检查 1800flowers.com 发现一个旧的母亲节页面是 404，但有来自 59 个网站的 225 个链接指向它。通过 301 重定向到当前的母亲节页面，就能回收这些链接的价值。
+    ![](https://ahrefs.com/blog/zh/wp-content/uploads/2021/07/Untitled-84.jpg)
+    *图片说明：使用类似 Ahrefs 的工具找到带有外部链接的 404 页面*
+
+*   **添加内部链接 (Internal Linking):**
+    *   **目标:** 帮助 Google 理解你的网站结构，传递页面权重，也方便用户在你的网站内浏览。
+    *   **动作:**
+        1.  在写新内容或编辑旧内容时，思考当前页面可以链接到哪些网站内其他相关的页面。
+        2.  使用描述性的锚文本 (链接文字)。例如，写到"关键词研究"时，链接到你关于关键词研究的详细教程页面，锚文本可以是"学习如何做关键词研究"。
+        3.  (可选免费工具) 在 [Ahrefs Webmaster Tools](https://ahrefs.com/webmaster-tools) 中运行 Site Audit (网站诊断)，查看 "Internal link opportunities" (内部链接机会) 报告，它会自动帮你找到可以添加内链的地方。
+    *   **工具:** 你的大脑，Ahrefs Webmaster Tools (Site Audit)
+
+*   **添加架构标记 (Schema Markup):**
+    *   **目标:** 用一种 Google 能读懂的"语言"告诉它你页面上内容的具体含义 (比如这是一篇食谱、一个 FAQ 列表、一个产品)，有时能在搜索结果中获得更丰富的展示样式 (富媒体摘要)，吸引点击。
+    *   **动作:**
+        1.  访问 [Google 搜索库](https://developers.google.com/search/docs/guides/search-gallery)，看看有哪些 Schema 类型适用于你的内容 (常见的有 Article, FAQPage, Product, Recipe 等)。
+        2.  找到适合你内容的类型后，使用 Schema 生成器工具 (网上搜索 "Schema Markup Generator" 有很多免费的) 来创建对应的 JSON-LD 代码。你需要填入一些内容信息 (如标题、问题、答案、产品名称、价格等)。
+        3.  将生成的代码复制粘贴到你网页 HTML 的 `<head>` 或 `<body>` 部分。
+    *   **工具:** [Google 搜索库](https://developers.google.com/search/docs/guides/search-gallery) (查类型), Schema Markup Generator (网上找免费工具)
+
+#### 第二步：附加/进阶要素 (有精力再搞)
+
+*   **关注页面体验 (Page Experience Signals):**
+    *   **目标:** 这些主要是为了提升用户访问你网站时的感受，Google 也将它们作为次要排名因素。
+    *   **动作 & 工具:**
+        *   **核心页面指标 (Core Web Vitals):** 使用 [Google PageSpeed Insights](https://pagespeed.web.dev/) 测试你的页面加载速度 (LCP)、视觉稳定性 (CLS) 和交互响应性 (FID)。根据工具的建议进行优化 (这可能需要技术知识)。
+        *   **HTTPS:** 确保你的整个网站是通过 `https://` 访问的 (地址栏有小锁标志)。如果不是，需要配置 SSL 证书。
+        ![](https://ahrefs.com/blog/zh/wp-content/uploads/2021/07/Untitled-86.png)
+        *图片说明：浏览器地址栏的 HTTPS 小锁标志*
+        *   **移动友好 (Mobile-Friendly):** 使用 [Google Mobile-Friendly Test](https://search.google.com/test/mobile-friendly) 或查看 Google Search Console 中的 "移动可用性" 报告，确保页面在手机上布局合理、按钮可点、文字可读。
+        ![](https://ahrefs.com/blog/zh/wp-content/uploads/2021/07/Untitled-88.png)
+        *图片说明：Google Search Console 中的移动可用性报告示例*
+        *   **安全浏览 (Safe Browsing):** Google Search Console 的 "安全问题" 报告会提示你的网站是否有恶意软件、钓鱼等问题。保持网站安全。
+        *   **无干扰性插页广告 (No Intrusive Interstitials):** 避免使用会覆盖主内容、影响用户访问的大弹窗广告。
+
+*   **使用 Hreflang (针对多语言/多区域网站):**
+    *   **目标:** 如果你的网站有多个语言版本 (如 `example.com/en/` 和 `example.com/zh/`) 或针对不同国家提供不同内容 (如 `example.co.uk` 和 `example.com.au`)，你需要告诉 Google 这些版本之间的关系。
+    *   **动作:** 在每个页面的 HTML `<head>` 部分添加 `<link rel="alternate" hreflang="语言代码-国家代码" href="对应版本的URL">` 标签。例如，中文页面需要指向对应的英文页面，反之亦然。这是一个相对复杂的操作，如果你需要，请搜索 "hreflang generator" 或查阅 Google 的官方文档。
+    *   **工具:** Hreflang Tag Generator (网上搜索)
+
+*   **网站维护 (保持健康):**
+    *   **目标:** 定期检查并修复一些小问题，保持网站良好运行。
+    *   **动作 & 工具:**
+        *   **修复失效链接 (Broken Links):** 使用 [Ahrefs Webmaster Tools](https://ahrefs.com/webmaster-tools) 的 Site Audit 查找指向 404 页面的内部链接 ("Internal broken links") 和外部链接 ("External broken links")。修复或移除这些链接。
+        ![](https://ahrefs.com/blog/zh/wp-content/uploads/2021/07/Untitled-90.png)
+        *图片说明：Site Audit 中查找失效链接的报告示例*
+        *   **修复重定向链 (Redirect Chains):** Site Audit 也会报告 "Redirect chains" (重定向链) 的问题。理想情况下，重定向应该一步到位 (A -> C)，而不是经过中间环节 (A -> B -> C)。修改重定向规则以消除链条。
+        ![](https://ahrefs.com/blog/zh/wp-content/uploads/2021/07/Untitled-92.png)
+        *图片说明：Site Audit 中查找重定向链的报告示例*
+
+---
+
+### 技术 SEO 优化工具包
+
+*   **工具包 (免费为主):**
+    *   [Google Search Console](https://search.google.com/search-console/about): 必备！监控收录、性能、体验问题。
+    *   [Ahrefs Webmaster Tools](https://ahrefs.com/webmaster-tools): 免费！网站诊断 (Site Audit) 找技术问题 (索引、死链、内链机会、重定向等)，网站分析 (Site Explorer) 找带链接的 404 页面。
+    *   [Google PageSpeed Insights](https://pagespeed.web.dev/): 测试页面速度和核心 Web 指标。
+    *   [Google Mobile-Friendly Test](https://search.google.com/test/mobile-friendly): 检查移动端适配性。
+    *   **Schema Markup Generator:** (网上搜索有很多免费工具) 用于生成结构化数据代码。
+    *   **浏览器开发者工具 (Chrome DevTools / Firefox Developer Tools):** (浏览器自带，按 F12) 进阶用户可以用它检查网页代码、网络请求、性能细节等。
+*   **案例 (来自原文):**
+    *   **回收链接价值:** 1800flowers.com 通过修复一个有 225 个外部链接指向的 404 页面 (做 301 重定向)，成功回收了这些链接的价值。检查你网站的 404 页面，看看是否也能找到类似的机会！
+*   **快速检查表:**
+    *   [ ] GSC 显示重要页面已收录？
+    *   [ ] 用 AWT 检查过带外链的 404 页面并设置了 301 重定向？
+    *   [ ] 用 AWT 的"链接机会"报告添加了内链？
+    *   [ ] 网站已启用 HTTPS？
+    *   [ ] 页面通过了移动友好测试？
+    *   [ ] (可选) 检查过页面速度 (PageSpeed Insights)？
+    *   [ ] (可选) 为合适的内容添加了 Schema 标记？
+    *   [ ] (可选) 检查并修复了失效链接和重定向链 (AWT Site Audit)？
 
 ## 5、外部链接
 
