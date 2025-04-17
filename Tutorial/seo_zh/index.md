@@ -777,6 +777,33 @@
 
 ## 6、SEO 工具
 
-## 7、附录
+### 免费工具
+* **Ahrefs Free Keyword Generator:** 用于查找关键词。
+* **Ahrefs Webmaster Tools (AWT):** 免费的网站诊断、关键词排名跟踪、内链机会查找、失效链接检查等工具集。
+* **Ahrefs Free Backlink Checker:** 快速查看网站的前 100 个外链。
+* **Google Keyword Planner:** Google Ads 内的关键词研究工具 (需要 Google Ads 账号)。
+* **Google 搜索框建议 (Google Suggest):** 在 Google 搜索时自动弹出的建议。
+* **Google 相关搜索:** Google 搜索结果页底部的相关搜索词。
+* **Answer The Public:** 用于查找围绕关键词的问题和话题 (有每日使用限制)。
+* **Google Trends:** 查看关键词的搜索热度和趋势。
+* **ChatGPT (基础版):** 用于头脑风暴、生成内容、标题等。
+* **Google Search Console (GSC):** 监控网站在 Google 搜索中的表现、收录情况、技术问题等。
+* **TinyPNG / iLoveIMG:** 在线图片压缩工具。
+* **Google PageSpeed Insights:** 测试页面加载速度和用户体验。
+* **Schema Markup Generator (如 Schema.dev):** 生成结构化数据代码的工具。
+* **Google 搜索库 (Search Gallery):** 查看 Google 支持的 Schema 类型和富媒体摘要。
+* **Google Mobile-Friendly Test:** 测试网页的移动端友好性。
+* **Google Alerts:** 监控网络上提及特定关键词或品牌的新内容。
+* **Next.js / Nuxt.js:** 前端框架，有助于构建 SEO 友好的网站。
+* **行业目录/评论网站 (部分免费):** 如 Yelp、TripAdvisor，可以提交基本的商业信息。
 
-### 提示词
+### 付费工具
+* **Ahrefs (核心套件):** 全功能的 SEO 工具平台，提供更深入的关键词研究、竞争对手分析、外链分析、网站诊断等。
+* **Semrush:** 另一个全功能的 SEO 和营销工具平台，功能与 Ahrefs 类似。
+* **SimilarWeb:** 另一个全功能的 SEO 和营销工具平台，功能与 Ahrefs 类似。
+* **Answer The Public (付费版):** 无使用次数限制。
+* **ChatGPT (高级版):** 功能更强的 AI 模型。
+* **行业目录/评论网站 (高级功能/广告):** 如 Capterra、G2，可能提供付费推广或高级分析功能。
+
+## 最后
+最后夹带一个私货，我开发了一款工具，![SparkNow](https://sparknow.cc/)，一站式帮你启动项目，量大管饱，感兴趣的可以试试，不感兴趣直接忽略就行。
