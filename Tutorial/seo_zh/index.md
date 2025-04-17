@@ -1,4 +1,4 @@
-# 懒人 SEO
+# 懒人 SEO 教程
 
 ## 教程宗旨
 
@@ -201,7 +201,7 @@
 
 **工具 1：Ahrefs Free Keyword Generator** (推荐，完全免费)
 
-1. 打开 [Ahrefs Free Keyword Generator](https://ahrefs.com/free-keyword-generator)。
+1. 打开 [Ahrefs Free Keyword Generator](https://ahrefs.com/keyword-generator)。
 2. 把你刚才想到的"种子关键词"一个一个输进去。
 3. 选择你的目标国家 (比如：中国)。
 4. 点击"Find keywords"。
