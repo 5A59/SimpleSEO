@@ -171,9 +171,10 @@
 
 ## 详细版
 
-## 1、找到关键词
+<details>
+<summary><h2>1、找到关键词</h2></summary>
 
-## 第一步：想"种子关键词"
+### 第一步：想"种子关键词"
 
 "种子关键词"就是最基础、最核心的词。别想太复杂，问自己几个问题：
 
@@ -276,7 +277,12 @@
  * [Google Keyword Planner](https://ads.google.com/home/tools/keyword-planner/) (需要 Ads 账号，免费)
  * [Ahrefs Webmaster Tools](https://ahrefs.com/webmaster-tools):** 功能更强的免费工具集，但需要验证你拥有自己的网站。可以看到自己网站目前有哪些关键词排名，以及发现低竞争度关键词等。
 
-## 2、SEO 内容怎么写
+</details>
+
+---
+
+<details>
+<summary><h2>2、SEO 内容怎么写</h2></summary>
 
 ### 步骤 1: 搞懂用户想看啥 (分析搜索意图)
 
@@ -333,7 +339,12 @@
 
 ---
 
-## 3、页面 SEO
+</details>
+
+---
+
+<details>
+<summary><h2>3、页面 SEO</h2></summary>
 
 ### 第一步：让搜索引擎和用户"看懂"你的页面
 
@@ -462,7 +473,12 @@
 * [Google Search Console](https://search.google.com/search-console/) (监控排名, 体验问题, 看关键词)
 * [Schema.dev Schema Generator](https://schema.dev/schema-generator/) (生成 Schema 代码)
 
-## 4、外部链接
+</details>
+
+---
+
+<details>
+<summary><h2>4、外部链接</h2></summary>
 
 ### 什么是外部链接 (外链)？
 
@@ -534,8 +550,12 @@
  * [Ahrefs Free Backlink Checker](https://ahrefs.com/zh/backlink-checker): 快速查看任何网站 (包括你的竞争对手) 的前 100 个外部链接，了解他们从哪里获得链接。
  * [Google Alerts](https://www.google.com/alerts): 设置与你的品牌名、网站名、核心主题相关的提醒。当网上出现相关新内容时，你会收到邮件通知。这有助于你发现别人提到了你但没加链接的情况 (可以去请求加上)，或是发现新的链接建设机会。
 
+</details>
 
-## 5、其他优化
+---
+
+<details>
+<summary><h2>5、其他优化</h2></summary>
 
 1.  **查收录:** 去 [Google Search Console](https://search.google.com/search-console/about) (免费，后面简称 GSC)，用 "网址检查" 功能看看你的重要页面 Google 能不能找到。
 2.  **修死链:** 如果你改过网址或删过页面，用 [Ahrefs Webmaster Tools](https://ahrefs.com/webmaster-tools) (免费，后面简称 AWT) 找到那些变成 404 但以前有外部链接的页面，把它们用 301 重定向到新页面。
@@ -606,9 +626,12 @@
         }
         ```
 
+</details>
+
 ---
 
-## 6、SEO 工具
+<details>
+<summary><h2>6、SEO 工具</h2></summary>
 
 ### 免费工具
 * **Ahrefs Free Keyword Generator:** 用于查找关键词。
@@ -637,6 +660,10 @@
 * **Answer The Public (付费版):** 无使用次数限制。
 * **ChatGPT (高级版):** 功能更强的 AI 模型。
 * **行业目录/评论网站 (高级功能/广告):** 如 Capterra、G2，可能提供付费推广或高级分析功能。
+
+</details>
+
+---
 
 ## 最后
 最后夹带一个私货，我开发了一款工具，![SparkNow](https://sparknow.cc/)，一站式帮你启动项目，SEO检测、外链、性能、宣传文稿、宣传图片，一站式都帮你搞定，量大管饱，感兴趣的朋友可以试试，不感兴趣直接忽略就行，掌握上面的 SEO 方法就够了。
