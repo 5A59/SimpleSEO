@@ -136,3 +136,4 @@ dist
 .pnp.*
 
 web.html
+script/
