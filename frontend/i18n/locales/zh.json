@@ -1,0 +1,21 @@
+{
+  "nav": {
+    "home": "首页",
+    "guide": "指南",
+    "tools": "工具"
+  },
+  "common": {
+    "language": "语言",
+    "darkMode": "暗黑模式",
+    "lightMode": "明亮模式"
+  },
+  "home": {
+    "title": "SimpleSEO",
+    "description": "一个简洁、优雅的SEO工具"
+  },
+  "toc": {
+    "title": "目录",
+    "expand": "展开",
+    "collapse": "折叠"
+  }
+} 
