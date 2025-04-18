@@ -2,12 +2,12 @@
   <div class="relative inline-block">
     <button 
       @click="toggleDropdown" 
-      class="flex items-center space-x-1 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition px-3 py-2 rounded-md"
+      class="flex items-center space-x-1 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition px-2 sm:px-3 py-1.5 sm:py-2 rounded-md"
       :aria-expanded="isOpen"
       aria-haspopup="true"
       aria-label="切换语言"
     >
-      <span class="mr-1">{{ currentLanguageLabel }}</span>
+      <span class="mr-1 text-sm sm:text-base">{{ currentLanguageLabel }}</span>
       <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" :class="{ 'rotate-180': isOpen }" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
       </svg>
@@ -16,7 +16,7 @@
     <!-- 下拉菜单 -->
     <div 
       v-show="isOpen" 
-      class="absolute right-0 mt-2 py-2 w-32 bg-white dark:bg-gray-800 rounded-md shadow-lg z-50 border border-gray-200 dark:border-gray-700"
+      class="absolute right-0 mt-2 py-2 w-32 bg-white dark:bg-gray-800 rounded-md shadow-lg z-50 border border-gray-200 dark:border-gray-700 animate-fade-in"
     >
       <a 
         v-for="lang in availableLanguages" 
@@ -126,4 +126,15 @@ const selectLanguage = async (langCode) => {
     isOpen.value = false
   }
 }
-</script> 
+</script>
+
+<style scoped>
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.2s ease-out;
+}
+</style> 

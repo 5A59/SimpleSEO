@@ -2,12 +2,13 @@
   <div class="min-h-screen flex flex-col bg-white dark:bg-gray-900">
     <!-- 导航条 -->
     <header class="border-b border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 sticky top-0 z-10">
-      <div class="container mx-auto py-4 px-6 flex justify-between items-center">
+      <div class="container mx-auto py-3 sm:py-4 px-4 sm:px-6 flex justify-between items-center">
         <NuxtLink to="/" class="font-bold text-xl text-gray-900 dark:text-white">
           SimpleSEO
         </NuxtLink>
         
-        <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-2 sm:space-x-4">
+          <!-- 桌面端导航 -->
           <nav class="hidden md:flex space-x-4">
             <NuxtLink 
               v-for="item in navigation" 
@@ -39,18 +40,21 @@
               </svg>
             </div>
           </button>
+          
+          <!-- 移动端导航 -->
+          <MobileNavbar class="md:hidden" />
         </div>
       </div>
     </header>
 
     <!-- 主要内容 -->
-    <main class="container mx-auto flex-grow px-6 py-8">
+    <main class="container mx-auto flex-grow px-4 sm:px-6 py-4 sm:py-8">
       <slot />
     </main>
 
     <!-- 页脚 -->
     <footer class="bg-gray-50 dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
-      <div class="container mx-auto py-6 px-6 text-center text-gray-600 dark:text-gray-400">
+      <div class="container mx-auto py-4 sm:py-6 px-4 sm:px-6 text-center text-gray-600 dark:text-gray-400">
         <p>{{ $t('footer.rights', { year: new Date().getFullYear() }) }}</p>
       </div>
     </footer>
@@ -60,6 +64,7 @@
 <script setup>
 // 显式导入组件
 import LanguageSwitcher from '../components/LanguageSwitcher.vue';
+import MobileNavbar from '../components/MobileNavbar.vue';
 import { useLocalePath } from '#i18n'
 
 const localePath = useLocalePath()
@@ -74,4 +79,37 @@ const navigation = [
   { titleKey: 'nav.guide', path: '/guide' },
   { titleKey: 'nav.tools', path: '/tools' },
 ];
-</script> 
+</script>
+
+<style>
+/* 全局响应式样式 */
+.container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+</style> 

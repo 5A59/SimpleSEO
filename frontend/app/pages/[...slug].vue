@@ -82,14 +82,14 @@ const toggleExpand = (index: number) => {
 </script>
 
 <template>
-  <div class="flex flex-col md:flex-row">
-    <!-- 移动端的目录切换按钮 -->
+  <div class="flex flex-col md:flex-row relative">
+    <!-- 移动端的目录切换按钮 - 重新设计为更好的浮动按钮 -->
     <button 
       @click="showTocMobile = !showTocMobile" 
-      class="md:hidden fixed bottom-6 right-6 bg-blue-600 text-white p-3 rounded-full shadow-lg z-50"
+      class="md:hidden fixed bottom-6 right-6 bg-blue-600 text-white p-3 rounded-full shadow-lg z-50 flex items-center justify-center"
       aria-label="目录"
     >
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
       </svg>
     </button>
@@ -144,20 +144,20 @@ const toggleExpand = (index: number) => {
       </div>
     </div>
 
-    <!-- 移动端目录抽屉 -->
+    <!-- 移动端目录抽屉 - 改进的目录弹出效果 -->
     <div 
       v-if="showTocMobile" 
-      class="md:hidden fixed inset-0 bg-black bg-opacity-50 z-40"
+      class="md:hidden fixed inset-0 bg-black bg-opacity-50 z-40 backdrop-blur-sm"
       @click="showTocMobile = false"
     >
       <div 
-        class="absolute right-0 top-0 h-full w-72 bg-white dark:bg-gray-800 p-4 overflow-y-auto"
+        class="absolute right-0 top-0 h-full w-72 max-w-[80%] bg-white dark:bg-gray-800 p-4 overflow-y-auto shadow-xl transform transition-transform animate-slide-in"
         @click.stop
       >
         <div class="flex justify-between items-center mb-4">
           <h2 class="text-lg font-bold text-gray-900 dark:text-white">{{ $t('toc.title') }}</h2>
-          <button @click="showTocMobile = false" class="text-gray-500 dark:text-gray-400">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <button @click="showTocMobile = false" class="text-gray-500 dark:text-gray-400 p-1 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
@@ -210,8 +210,8 @@ const toggleExpand = (index: number) => {
     </div>
 
     <!-- 内容区域 -->
-    <div class="flex-1 max-w-3xl mx-auto">
-      <article class="prose prose-blue dark:prose-invert lg:prose-lg w-full max-w-none">
+    <div class="flex-1 mx-auto w-full px-2 sm:px-0 max-w-3xl">
+      <article class="prose prose-blue dark:prose-invert sm:prose-base lg:prose-lg w-full max-w-none">
         <ContentRenderer
           v-if="page"
           :value="page"
@@ -225,22 +225,29 @@ const toggleExpand = (index: number) => {
 .prose h2 {
   scroll-margin-top: 6rem;
   margin-top: 2rem;
+  font-size: 1.5rem;
+  line-height: 1.3;
 }
 
 .prose h3 {
   scroll-margin-top: 6rem;
   margin-top: 1.5rem;
+  font-size: 1.25rem;
+  line-height: 1.3;
 }
 
 .prose p {
   margin-top: 1rem;
   margin-bottom: 1rem;
+  line-height: 1.6;
 }
 
 .prose pre {
   background-color: #f8f9fa;
   border-radius: 0.375rem;
   padding: 1rem;
+  overflow-x: auto;
+  font-size: 0.875rem;
 }
 
 .dark .prose pre {
@@ -250,11 +257,18 @@ const toggleExpand = (index: number) => {
 .prose img {
   border-radius: 0.375rem;
   margin: 1.5rem 0;
+  max-width: 100%;
+  height: auto;
 }
 
 .prose a {
   text-decoration: none;
   border-bottom: 1px dotted;
+  color: #2563eb;
+}
+
+.dark .prose a {
+  color: #3b82f6;
 }
 
 .prose a:hover {
@@ -266,6 +280,7 @@ const toggleExpand = (index: number) => {
   background-color: #f8fafc;
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
+  font-style: italic;
 }
 
 .dark .prose blockquote {
@@ -274,5 +289,44 @@ const toggleExpand = (index: number) => {
 
 .prose ul, .prose ol {
   padding-left: 1.5rem;
+  margin: 1rem 0;
+}
+
+.prose ul li, .prose ol li {
+  margin: 0.5rem 0;
+}
+
+/* 移动端特别样式 */
+@media (max-width: 768px) {
+  .prose h2 {
+    font-size: 1.4rem;
+  }
+  
+  .prose h3 {
+    font-size: 1.2rem;
+  }
+  
+  .prose p, .prose li {
+    font-size: 1rem;
+  }
+  
+  .prose pre {
+    padding: 0.75rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* 目录抽屉动画 */
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in {
+  animation: slide-in 0.25s ease-out;
 }
 </style>

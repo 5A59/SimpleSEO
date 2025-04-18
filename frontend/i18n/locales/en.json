@@ -17,5 +17,8 @@
     "title": "Table of Contents",
     "expand": "Expand",
     "collapse": "Collapse"
+  },
+  "footer": {
+    "rights": "All Rights Reserved"
   }
 } 

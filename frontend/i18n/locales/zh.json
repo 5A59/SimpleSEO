@@ -17,5 +17,8 @@
     "title": "目录",
     "expand": "展开",
     "collapse": "折叠"
+  },
+  "footer": {
+    "rights": "版权所有"
   }
 } 

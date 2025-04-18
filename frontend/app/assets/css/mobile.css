@@ -1,0 +1,129 @@
+/* 全局移动端样式增强 */
+
+/* 基础触摸适配 */
+@media (max-width: 768px) {
+  /* 增加触摸区域大小 */
+  button, 
+  a,
+  [role="button"],
+  input[type="submit"],
+  input[type="button"] {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* 减少页面边距，增加内容区域 */
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  /* 改进表单元素在移动端的体验 */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  textarea,
+  select {
+    font-size: 16px; /* 防止iOS自动缩放 */
+    padding: 0.75rem;
+  }
+  
+  /* 调整字体大小 */
+  h1 {
+    font-size: 1.75rem !important;
+  }
+  
+  h2 {
+    font-size: 1.5rem !important;
+  }
+  
+  h3 {
+    font-size: 1.25rem !important;
+  }
+  
+  body {
+    font-size: 1rem;
+  }
+}
+
+/* 移动端动画与过渡效果 */
+@media (max-width: 768px) {
+  .transition {
+    transition-duration: 200ms !important; /* 加快速度 */
+  }
+}
+
+/* 改进移动端暗黑模式 */
+@media (max-width: 768px) and (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212 !important;
+  }
+}
+
+/* 修复移动端触控问题 */
+@media (hover: none) {
+  /* 防止双击缩放 */
+  a, button {
+    touch-action: manipulation;
+  }
+  
+  /* 禁用悬停样式，改为active状态 */
+  a:hover, button:hover {
+    background-color: inherit !important;
+    color: inherit !important;
+  }
+  
+  a:active, button:active {
+    opacity: 0.7;
+  }
+}
+
+/* 响应式表格 */
+@media (max-width: 768px) {
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+/* 移动端滚动条美化 */
+@media (max-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.2);
+    border-radius: 4px;
+  }
+  
+  .dark ::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.2);
+  }
+}
+
+/* 修复iOS默认样式问题 */
+@supports (-webkit-touch-callout: none) {
+  input, textarea {
+    -webkit-appearance: none;
+    border-radius: 0;
+  }
+  
+  /* 防止底部安全区域被遮挡 */
+  body {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+
+/* 改进移动端文本选择 */
+@media (max-width: 768px) {
+  ::selection {
+    background-color: rgba(37, 99, 235, 0.2);
+  }
+} 

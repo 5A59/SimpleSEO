@@ -31,10 +31,14 @@ export default defineNuxtConfig({
     head: {
       title: 'SimpleSEO',
       meta: [
-        { name: 'description', content: '一个简洁、优雅的SEO工具' }
+        { name: 'description', content: '一个简洁、优雅的SEO工具' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0' }
       ]
     }
   },
+  css: [
+    '~/assets/css/mobile.css'
+  ],
   i18n: {
     locales: [
       { code: 'zh', iso: 'zh-CN', file: 'zh.json', name: '中文' },
@@ -56,7 +60,7 @@ export default defineNuxtConfig({
     exclude: [
     ],
     i18n: {
-      locales: ['en', 'zh', 'de', 'es', 'fr', 'ja', 'ko'],
+      locales: ['en', 'zh'],
       routesNameSeparator: '___'
     }
   },
