@@ -10,14 +10,23 @@
         <div class="flex items-center space-x-2 sm:space-x-4">
           <!-- 桌面端导航 -->
           <nav class="hidden md:flex space-x-4">
-            <NuxtLink 
-              v-for="item in navigation" 
-              :key="item.path" 
-              :to="localePath(item.path)"
-              class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition"
-            >
-              {{ $t(item.titleKey) }}
-            </NuxtLink>
+            <template v-for="item in navigation" :key="item.path">
+              <NuxtLink 
+                v-if="!item.external"
+                :to="localePath(item.path)"
+                class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition"
+              >
+                {{ $t(item.titleKey) }}
+              </NuxtLink>
+              <a 
+                v-else
+                :href="item.path"
+                target="_blank"
+                class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition"
+              >
+                {{ $t(item.titleKey) }}
+              </a>
+            </template>
           </nav>
           
           <!-- 语言切换 -->
@@ -75,9 +84,9 @@ const toggleColorMode = () => {
 
 // 导航菜单
 const navigation = [
-  { titleKey: 'nav.home', path: '/' },
-  { titleKey: 'nav.guide', path: '/guide' },
-  { titleKey: 'nav.tools', path: '/tools' },
+  { titleKey: 'nav.home', path: '/', external: false},
+  { titleKey: 'nav.about', path: 'https://zyi1024.com/', external: true },
+  { titleKey: 'nav.github', path: 'https://github.com/5A59/SimpleSEO', external: true },
 ];
 </script>
 

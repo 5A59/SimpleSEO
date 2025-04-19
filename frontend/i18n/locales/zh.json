@@ -1,8 +1,8 @@
 {
   "nav": {
     "home": "首页",
-    "guide": "指南",
-    "tools": "工具"
+    "about": "关于我",
+    "github": "GitHub"
   },
   "common": {
     "language": "语言",

@@ -1,8 +1,8 @@
 {
   "nav": {
     "home": "ホーム",
-    "guide": "ガイド",
-    "tools": "ツール"
+    "about": "私について",
+    "github": "GitHub"
   },
   "common": {
     "language": "言語",

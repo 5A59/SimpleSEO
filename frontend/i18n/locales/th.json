@@ -1,8 +1,8 @@
 {
   "nav": {
     "home": "หน้าแรก",
-    "guide": "คู่มือ",
-    "tools": "เครื่องมือ"
+    "about": "เกี่ยวกับฉัน",
+    "github": "GitHub"
   },
   "common": {
     "language": "ภาษา",

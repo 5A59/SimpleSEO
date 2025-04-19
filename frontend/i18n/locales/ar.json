@@ -1,8 +1,8 @@
 {
   "nav": {
     "home": "الرئيسية",
-    "guide": "الدليل",
-    "tools": "الأدوات"
+    "about": "عني",
+    "github": "GitHub"
   },
   "common": {
     "language": "اللغة",

@@ -1,8 +1,8 @@
 {
   "nav": {
     "home": "Trang chủ",
-    "guide": "Hướng dẫn",
-    "tools": "Công cụ"
+    "about": "Về tôi",
+    "github": "GitHub"
   },
   "common": {
     "language": "Ngôn ngữ",

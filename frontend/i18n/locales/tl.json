@@ -1,8 +1,8 @@
 {
   "nav": {
     "home": "Pahina",
-    "guide": "Gabay",
-    "tools": "Mga Kasangkapan"
+    "about": "Kung saan ako",
+    "github": "GitHub"
   },
   "common": {
     "language": "Wika",

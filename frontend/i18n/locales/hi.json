@@ -1,8 +1,8 @@
 {
   "nav": {
     "home": "होम",
-    "guide": "मार्गदर्शिका",
-    "tools": "उपकरण"
+    "about": "मार्गदर्शिका",
+    "github": "GitHub"
   },
   "common": {
     "language": "भाषा",

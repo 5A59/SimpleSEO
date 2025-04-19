@@ -51,16 +51,26 @@
           </div>
           
           <nav class="space-y-3 flex-grow">
-            <NuxtLink 
-              v-for="item in navigation" 
-              :key="item.path" 
-              :to="localePath(item.path)"
-              @click="isOpen = false"
-              class="block py-2 px-4 text-lg rounded-md text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 transition"
-              :class="{ 'bg-gray-100 dark:bg-gray-700 font-medium': route.path === localePath(item.path) }"
-            >
-              {{ $t(item.titleKey) }}
-            </NuxtLink>
+            <template v-for="item in navigation" :key="item.path">
+              <NuxtLink 
+                v-if="!item.external"
+                :to="localePath(item.path)"
+                @click="isOpen = false"
+                class="block py-2 px-4 text-lg rounded-md text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 transition"
+                :class="{ 'bg-gray-100 dark:bg-gray-700 font-medium': route.path === localePath(item.path) }"
+              >
+                {{ $t(item.titleKey) }}
+              </NuxtLink>
+              <a 
+                v-else
+                :href="item.path"
+                target="_blank"
+                @click="isOpen = false"
+                class="block py-2 px-4 text-lg rounded-md text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 transition"
+              >
+                {{ $t(item.titleKey) }}
+              </a>
+            </template>
           </nav>
           
           <div class="mt-8 pt-4 border-t border-gray-200 dark:border-gray-700">
@@ -109,8 +119,8 @@ const toggleColorMode = () => {
 // 导航菜单项
 const navigation = [
   { titleKey: 'nav.home', path: '/' },
-  { titleKey: 'nav.guide', path: '/guide' },
-  { titleKey: 'nav.tools', path: '/tools' },
+  { titleKey: 'nav.about', path: 'https://zyi1024.com/', external: true },
+  { titleKey: 'nav.github', path: 'https://github.com/5A59/SimpleSEO', external: true },
 ]
 
 // 添加ESC键和滚动监听

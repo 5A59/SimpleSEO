@@ -1,8 +1,8 @@
 {
   "nav": {
     "home": "Главная",
-    "guide": "Руководство",
-    "tools": "Инструменты"
+    "about": "Обо мне",
+    "github": "GitHub"
   },
   "common": {
     "language": "Язык",

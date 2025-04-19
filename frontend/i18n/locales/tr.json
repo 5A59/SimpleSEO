@@ -1,8 +1,8 @@
 {
   "nav": {
     "home": "Ana Sayfa",
-    "guide": "Kılavuz",
-    "tools": "Araçlar"
+    "about": "Benimle ilgili",
+    "github": "GitHub"
   },
   "common": {
     "language": "Dil",

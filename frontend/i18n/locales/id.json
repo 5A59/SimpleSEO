@@ -1,8 +1,8 @@
 {
   "nav": {
     "home": "Beranda",
-    "guide": "Panduan",
-    "tools": "Alat"
+    "about": "Tentang Saya",
+    "github": "GitHub"
   },
   "common": {
     "language": "Bahasa",

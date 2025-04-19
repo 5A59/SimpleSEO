@@ -1,8 +1,8 @@
 {
   "nav": {
     "home": "Nyumbani",
-    "guide": "Mwongozo",
-    "tools": "Zana"
+    "about": "Kwa Mimi",
+    "github": "GitHub"
   },
   "common": {
     "language": "Lugha",
