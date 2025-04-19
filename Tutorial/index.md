@@ -1,5 +1,11 @@
 # Simple SEO Tutorial
 
+<!-- ignore start -->
+
+[English](./en/index.md) | [中文](./zh/index.md) | [Español](./es/index.md) | [Français](./fr/index.md) | [Deutsch](./de/index.md) | [Italiano](./it/index.md) | [Português](./pt/index.md) | [日本語](./ja/index.md) | [한국어](./ko/index.md) | [Русский](./ru/index.md) | [العربية](./ar/index.md) | [हिन्दी](./hi/index.md) | [Bahasa Indonesia](./id/index.md) | [ภาษาไทย](./th/index.md) | [Türkçe](./tr/index.md) | [Tiếng Việt](./vi/index.md) | [Filipino](./tl/index.md) | [বাংলা](./bn/index.md) | [Kiswahili](./sw/index.md)
+
+<!-- ignore end -->
+
 ## Tutorial Goal
 
 The aim of this tutorial is simple: follow the steps, and you'll achieve 80% of your website's SEO potential. You don't need to understand the "why" or even what SEO is – just follow the instructions.

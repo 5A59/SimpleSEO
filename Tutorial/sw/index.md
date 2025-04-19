@@ -1,6 +1,9 @@
-Hakika! Hii hapa tafsiri ya Kiswahili ya mafunzo yako ya SEO, iliyoandaliwa kwa mtindo usio rasmi, wenye lugha ya asili na iliyoboreshwa kwa SEO:
-
 # Mwongozo Mkuu wa SEO: Kufanya Mambo Kuwa Rahisi!
+<!-- ignore start -->
+
+[English](../en/index.md) | [中文](../zh/index.md) | [Español](../es/index.md) | [Français](../fr/index.md) | [Deutsch](../de/index.md) | [Italiano](../it/index.md) | [Português](../pt/index.md) | [日本語](../ja/index.md) | [한국어](../ko/index.md) | [Русский](../ru/index.md) | [العربية](../ar/index.md) | [हिन्दी](../hi/index.md) | [Bahasa Indonesia](../id/index.md) | [ภาษาไทย](../th/index.md) | [Türkçe](../tr/index.md) | [Tiếng Việt](../vi/index.md) | [Filipino](../tl/index.md) | [বাংলা](../bn/index.md) | [Kiswahili](../sw/index.md)
+
+<!-- ignore end -->
 
 ## Lengo la Mwongozo Huu
 

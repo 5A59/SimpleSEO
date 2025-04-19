@@ -1,5 +1,11 @@
 # 极简 SEO 教程
 
+<!-- ignore start -->
+
+[English](../en/index.md) | [中文](../zh/index.md) | [Español](../es/index.md) | [Français](../fr/index.md) | [Deutsch](../de/index.md) | [Italiano](../it/index.md) | [Português](../pt/index.md) | [日本語](../ja/index.md) | [한국어](../ko/index.md) | [Русский](../ru/index.md) | [العربية](../ar/index.md) | [हिन्दी](../hi/index.md) | [Bahasa Indonesia](../id/index.md) | [ภาษาไทย](../th/index.md) | [Türkçe](../tr/index.md) | [Tiếng Việt](../vi/index.md) | [Filipino](../tl/index.md) | [বাংলা](../bn/index.md) | [Kiswahili](../sw/index.md)
+
+<!-- ignore end -->
+
 ## 教程宗旨
 
 本教程的目的是，看完以后照着做，你可以把网站的 SEO 做到 80 分，即便你不知道为什么，甚至不用你知道 SEO 是什么。
