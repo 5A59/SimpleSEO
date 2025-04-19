@@ -68,8 +68,6 @@ const currentLanguage = computed(() => {
 
 // 检测当前路径中的语言
 onMounted(() => {
-  detectCurrentLanguage()
-  
   // 添加Escape键监听
   document.addEventListener('keydown', handleEscKey)
 })
@@ -77,22 +75,6 @@ onMounted(() => {
 onBeforeUnmount(() => {
   document.removeEventListener('keydown', handleEscKey)
 })
-
-// 检测当前URL中的语言
-const detectCurrentLanguage = () => {
-  const path = route.path
-  
-  // 检查路径是否以/zh/等非默认语言前缀开始
-  if (path.startsWith('/zh/')) {
-    locale.value = 'zh'
-  } else if (path.startsWith('/en/')) {
-    // 如果以/en/开始 (虽然使用prefix_except_default策略时这不太可能)
-    locale.value = 'en'
-  } else {
-    // 根路径或其他路径，使用默认语言(英文)
-    locale.value = 'en'
-  }
-}
 
 // 切换下拉菜单显示状态
 const toggleDropdown = () => {
