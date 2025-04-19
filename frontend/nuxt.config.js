@@ -29,10 +29,23 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      title: 'SimpleSEO',
+      title: 'SimpleSEO - Simple SEO Guide',
       meta: [
-        { name: 'description', content: '一个简洁、优雅的SEO工具' },
-        { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0' }
+        { name: 'description', content: 'Simple SEO Guide' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0' },
+        { name: 'keywords', content: 'SEO, how to do SEO, how to improve SEO, SEO optimization, search engine optimization' },
+        { property: 'og:title', content: 'Simple SEO Guide' },
+        { property: 'og:description', content: 'Simple SEO Guide' },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:url', content: 'https://simpleseo.zyi1024.com' },
+        { property: 'og:site_name', content: 'Simple SEO Guide' },
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:title', content: 'Simple SEO Guide' },
+        { name: 'twitter:description', content: 'Simple SEO Guide' }
+      ],
+      link: [
+        { rel: 'icon', type: 'image/png', href: '/images/icon.png' },
+        { rel: 'canonical', href: 'https://simpleseo.zyi1024.com' }
       ]
     }
   },
@@ -60,27 +73,6 @@ export default defineNuxtConfig({
       { code: 'tr', iso: 'tr-TR', file: 'tr.json', name: 'Türkçe' },
       { code: 'it', iso: 'it-IT', file: 'it.json', name: 'Italiano' },
       { code: 'tl', iso: 'tl-PH', file: 'tl.json', name: 'Filipino' }
-      // const languages =  {
-//   en: "英语",
-//   // zh: "中文",
-//   es: "西班牙语",
-//   hi: "印地语",
-//   ar: "阿拉伯语",
-//   pt: "葡萄牙语",
-//   bn: "孟加拉语",
-//   fr: "法语",
-//   ru: "俄语",
-//   id: "印尼语",
-//   ja: "日语",
-//   de: "德语",
-//   sw: "斯瓦希里语",
-//   vi: "越南语",
-//   ko: "韩语",
-//   th: "泰语",
-//   tr: "土耳其语",
-//   it: "意大利语",
-//   tl: "菲律宾语"
-// };
     ],
     defaultLocale: 'en',
     strategy: 'prefix_except_default',
@@ -89,7 +81,9 @@ export default defineNuxtConfig({
       useCookie: true,
       cookieKey: 'i18n_redirected',
       redirectOn: 'root'
-    }
+    },
+    seo: true,
+    baseUrl: 'https://simpleseo.zyi1024.com'
   },
   // sitemap 配置
   sitemap: {
