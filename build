@@ -2,7 +2,7 @@
 
 # 设置变量
 DEPLOY_PATH="/var/www/SimpleSEO"
-SOURCE_PATH="dist"
+SOURCE_PATH="frontend/dist"
 
 # 输出时间
 echo "开始部署: $(date)"
