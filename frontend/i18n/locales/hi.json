@@ -1,0 +1,24 @@
+{
+  "nav": {
+    "home": "होम",
+    "guide": "मार्गदर्शिका",
+    "tools": "उपकरण"
+  },
+  "common": {
+    "language": "भाषा",
+    "darkMode": "डार्क मोड",
+    "lightMode": "लाइट मोड"
+  },
+  "home": {
+    "title": "SimpleSEO",
+    "description": "एक सरल और सुंदर SEO उपकरण"
+  },
+  "toc": {
+    "title": "विषय-सूची",
+    "expand": "विस्तार करें",
+    "collapse": "संक्षिप्त करें"
+  },
+  "footer": {
+    "rights": "सर्वाधिकार सुरक्षित"
+  }
+} 

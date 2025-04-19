@@ -20,19 +20,7 @@ Hii hapa toleo kamili la mwongozo wa Ahrefs SEO. Ikiwa una muda, usisite kuliang
 
 Uko tayari? Basi twende!
 
-<!-- ignore start -->
 
-## Orodha ya Yaliyomo
-* [Toleo la Haraka: Dakika 10 na Uko Tayari Kuanza](#toleo-la-haraka-dakika-10-na-uko-tayari-kuanza)
-* [Toleo Kamili](#toleo-kamili)
-  * [1. Kupata Maneno Muhimu (Keywords)](#1-kupata-maneno-muhimu-keywords)
-  * [2. Jinsi ya Kuandika Maandishi Bora ya SEO](#2-jinsi-ya-kuandika-maandishi-bora-ya-seo)
-  * [3. SEO ya Kila Ukurasa (On-Page SEO)](#3-seo-ya-kila-ukurasa-on-page-seo)
-  * [4. Viungo vya Nje (Backlinks)](#4-viungo-vya-nje-backlinks)
-  * [5. Maboresho Mengine](#5-maboresho-mengine)
-  * [6. Vifaa vya SEO](#6-vifaa-vya-seo)
-
-<!-- ignore end -->
 
 ## Toleo la Haraka: Dakika 10 na Uko Tayari Kuanza
 
@@ -180,8 +168,8 @@ Mambo ya kuzingatia wakati wa kuchagua maneno:
 
 ## Toleo Kamili
 
-<details>
-<summary><h2>1. Kupata Maneno Muhimu (Keywords)</h2></summary>
+
+<h2>1. Kupata Maneno Muhimu (Keywords)</h2>
 
 ### Hatua ya Kwanza: Fikiria "Maneno Muhimu ya Msingi"
 
@@ -286,12 +274,12 @@ Itatoa makadirio ya kiasi cha utafutaji na mapendekezo zaidi ya maneno muhimu. H
   * [Google Keyword Planner](https://ads.google.com/home/tools/keyword-planner/) (inahitaji akaunti ya Ads, bure)
   * [Ahrefs Webmaster Tools](https://ahrefs.com/webmaster-tools): Seti ya zana yenye nguvu zaidi ya bure, lakini inahitaji uhakikishe kuwa unamiliki tovuti yako mwenyewe. Unaweza kuona maneno muhimu ambayo tovuti yako inaorodheshwa kwa sasa na kugundua maneno muhimu ya ushindani mdogo.
 
-</details>
+
 
 ---
 
-<details>
-<summary><h2>2. Jinsi ya Kuandika Maandishi Bora ya SEO</h2></summary>
+
+<h2>2. Jinsi ya Kuandika Maandishi Bora ya SEO</h2>
 
 ### Hatua ya 1: Elewa Ni Nini Watumiaji Wanataka Kuona (Chambua Nia ya Utafutaji)
 
@@ -348,12 +336,12 @@ Epuka kushuka kwa uorodheshaji kutokana na yaliyomo kupitwa na wakati.
 
 ---
 
-</details>
+
 
 ---
 
-<details>
-<summary><h2>3. SEO ya Ukurasa (On-Page SEO)</h2></summary>
+
+<h2>3. SEO ya Ukurasa (On-Page SEO)</h2>
 
 ### Hatua ya Kwanza: Ruhusu Injini za Utafutaji na Watumiaji "Kuelewa" Ukurasa Wako
 
@@ -482,12 +470,12 @@ Linganisha nia ya utafutaji.
 * [Google Search Console](https://search.google.com/search-console/) (fuatilia uorodheshaji, matatizo ya uzoefu, angalia maneno)
 * [Jenereta ya Schema ya Schema.dev](https://schema.dev/schema-generator/) (tengeneza msimbo wa Schema)
 
-</details>
+
 
 ---
 
-<details>
-<summary><h2>4. Viungo vya Nje (Backlinks)</h2></summary>
+
+<h2>4. Viungo vya Nje (Backlinks)</h2>
 
 ### Viungo vya nje (backlinks) ni nini?
 
@@ -559,12 +547,12 @@ Ingeshindwa kupata viungo hivyo kwa bidii.
  * [Kikagua Kiungo cha Nyuma Bila Malipo cha Ahrefs - Ahrefs Free Backlink Checker](https://ahrefs.com/zh/backlink-checker): Angalia haraka viungo 100 vya juu vya nje vya tovuti yoyote (pamoja na washindani wako), elewa wanakopata viungo.
  * [Arifa za Google - Google Alerts](https://www.google.com/alerts): Weka arifa zinazohusiana na jina la chapa yako, jina la tovuti, mada kuu. Utapokea arifa za barua pepe wakati yaliyomo mapya yanahusiana yanaonekana mtandaoni. Hii inakusaidia kupata matukio ambayo umetumwa lakini hauongezewi kiungo (unaweza kwenda kuuliza uongezwe), au kupata fursa mpya za ujenzi wa kiungo.
 
-</details>
+
 
 ---
 
-<details>
-<summary><h2>5. Maboresho Mengine</h2></summary>
+
+<h2>5. Maboresho Mengine</h2>
 
 1. **Angalia uorodheshaji:** Nenda kwa [Google Search Console](https://search.google.com/search-console/about) (bila malipo, inajulikana kama GSC), tumia kitendaji cha "Ukaguzi wa URL - URL inspection" ili uone ikiwa Google inaweza kupata kurasa zako muhimu.
 2. **Rekebisha viungo vilivyokufa:** Ikiwa umebadilisha anwani au kufuta kurasa, tumia [Ahrefs Webmaster Tools](https://ahrefs.com/webmaster-tools) (bila malipo, inajulikana kama AWT) kupata kurasa ambazo zimekuwa 404 lakini zilikuwa na viungo vya nje hapo awali. Tumia uelekezaji upya wa 301 kwa kurasa mpya.
@@ -635,12 +623,12 @@ Ingeshindwa kupata viungo hivyo kwa bidii.
         }
         ```
 
-</details>
+
 
 ---
 
-<details>
-<summary><h2>6. Zana za SEO</h2></summary>
+
+<h2>6. Zana za SEO</h2>
 
 ### Zana za bure
 * **[Ahrefs Free Keyword Generator](https://ahrefs.com/keyword-generator):** Inatumika kutafuta maneno muhimu.
@@ -670,7 +658,7 @@ Ingeshindwa kupata viungo hivyo kwa bidii.
 * **[ChatGPT (toleo la hali ya juu) - ChatGPT (高级版)](https://openai.com/chatgpt/):** Model yenye nguvu zaidi ya AI.
 * **Saraka/Tovuti za kitaalam (toleo la hali ya juu/matangazo) - 行业目录/评论网站 (高级功能/广告):** Kama [Capterra](https://www.capterra.com/)、[G2](https://www.g2.com/)，wanaweza kutoa matangazo ya kulipia au sifa za hali ya juu za uchambuzi.
 
-</details>
+
 
 ---
 

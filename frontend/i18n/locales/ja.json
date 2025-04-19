@@ -1,0 +1,24 @@
+{
+  "nav": {
+    "home": "ホーム",
+    "guide": "ガイド",
+    "tools": "ツール"
+  },
+  "common": {
+    "language": "言語",
+    "darkMode": "ダークモード",
+    "lightMode": "ライトモード"
+  },
+  "home": {
+    "title": "SimpleSEO",
+    "description": "シンプルでエレガントなSEOツール"
+  },
+  "toc": {
+    "title": "目次",
+    "expand": "展開",
+    "collapse": "折りたたむ"
+  },
+  "footer": {
+    "rights": "全著作権所有"
+  }
+} 

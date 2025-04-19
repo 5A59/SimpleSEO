@@ -1,0 +1,24 @@
+{
+  "nav": {
+    "home": "Nyumbani",
+    "guide": "Mwongozo",
+    "tools": "Zana"
+  },
+  "common": {
+    "language": "Lugha",
+    "darkMode": "Hali ya Giza",
+    "lightMode": "Hali ya Mwanga"
+  },
+  "home": {
+    "title": "SimpleSEO",
+    "description": "Zana rahisi na nzuri ya SEO"
+  },
+  "toc": {
+    "title": "Yaliyomo",
+    "expand": "Panua",
+    "collapse": "Kunja"
+  },
+  "footer": {
+    "rights": "Haki zote zimehifadhiwa"
+  }
+} 

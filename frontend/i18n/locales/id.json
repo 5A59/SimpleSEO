@@ -1,0 +1,24 @@
+{
+  "nav": {
+    "home": "Beranda",
+    "guide": "Panduan",
+    "tools": "Alat"
+  },
+  "common": {
+    "language": "Bahasa",
+    "darkMode": "Mode Gelap",
+    "lightMode": "Mode Terang"
+  },
+  "home": {
+    "title": "SimpleSEO",
+    "description": "Alat SEO yang sederhana dan elegan"
+  },
+  "toc": {
+    "title": "Daftar Isi",
+    "expand": "Perluas",
+    "collapse": "Ciutkan"
+  },
+  "footer": {
+    "rights": "Hak Cipta Dilindungi"
+  }
+} 

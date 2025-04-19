@@ -1,0 +1,24 @@
+{
+  "nav": {
+    "home": "হোম",
+    "guide": "গাইড",
+    "tools": "টুলস"
+  },
+  "common": {
+    "language": "ভাষা",
+    "darkMode": "ডার্ক মোড",
+    "lightMode": "লাইট মোড"
+  },
+  "home": {
+    "title": "SimpleSEO",
+    "description": "একটি সরল এবং সুন্দর SEO টুল"
+  },
+  "toc": {
+    "title": "সূচিপত্র",
+    "expand": "বিস্তৃত করুন",
+    "collapse": "সংকুচিত করুন"
+  },
+  "footer": {
+    "rights": "সর্বস্বত্ব সংরক্ষিত"
+  }
+} 

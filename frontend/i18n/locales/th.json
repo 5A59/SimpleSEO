@@ -1,0 +1,24 @@
+{
+  "nav": {
+    "home": "หน้าแรก",
+    "guide": "คู่มือ",
+    "tools": "เครื่องมือ"
+  },
+  "common": {
+    "language": "ภาษา",
+    "darkMode": "โหมดมืด",
+    "lightMode": "โหมดสว่าง"
+  },
+  "home": {
+    "title": "SimpleSEO",
+    "description": "เครื่องมือ SEO ที่เรียบง่ายและสง่างาม"
+  },
+  "toc": {
+    "title": "สารบัญ",
+    "expand": "ขยาย",
+    "collapse": "ย่อ"
+  },
+  "footer": {
+    "rights": "สงวนลิขสิทธิ์"
+  }
+} 

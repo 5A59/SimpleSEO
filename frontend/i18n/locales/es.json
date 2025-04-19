@@ -1,0 +1,24 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "guide": "Guía",
+    "tools": "Herramientas"
+  },
+  "common": {
+    "language": "Idioma",
+    "darkMode": "Modo oscuro",
+    "lightMode": "Modo claro"
+  },
+  "home": {
+    "title": "SimpleSEO",
+    "description": "Una herramienta SEO simple y elegante"
+  },
+  "toc": {
+    "title": "Índice",
+    "expand": "Expandir",
+    "collapse": "Colapsar"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados"
+  }
+} 

@@ -1,0 +1,24 @@
+{
+  "nav": {
+    "home": "Главная",
+    "guide": "Руководство",
+    "tools": "Инструменты"
+  },
+  "common": {
+    "language": "Язык",
+    "darkMode": "Темный режим",
+    "lightMode": "Светлый режим"
+  },
+  "home": {
+    "title": "SimpleSEO",
+    "description": "Простой и элегантный инструмент SEO"
+  },
+  "toc": {
+    "title": "Содержание",
+    "expand": "Развернуть",
+    "collapse": "Свернуть"
+  },
+  "footer": {
+    "rights": "Все права защищены"
+  }
+} 

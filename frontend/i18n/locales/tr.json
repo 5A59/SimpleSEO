@@ -1,0 +1,24 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "guide": "Kılavuz",
+    "tools": "Araçlar"
+  },
+  "common": {
+    "language": "Dil",
+    "darkMode": "Karanlık Mod",
+    "lightMode": "Aydınlık Mod"
+  },
+  "home": {
+    "title": "SimpleSEO",
+    "description": "Basit ve zarif bir SEO aracı"
+  },
+  "toc": {
+    "title": "İçindekiler",
+    "expand": "Genişlet",
+    "collapse": "Daralt"
+  },
+  "footer": {
+    "rights": "Tüm hakları saklıdır"
+  }
+} 

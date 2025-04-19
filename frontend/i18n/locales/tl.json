@@ -1,0 +1,24 @@
+{
+  "nav": {
+    "home": "Pahina",
+    "guide": "Gabay",
+    "tools": "Mga Kasangkapan"
+  },
+  "common": {
+    "language": "Wika",
+    "darkMode": "Madilim na Mode",
+    "lightMode": "Maliwanag na Mode"
+  },
+  "home": {
+    "title": "SimpleSEO",
+    "description": "Isang simple at eleganteng SEO tool"
+  },
+  "toc": {
+    "title": "Talaan ng Nilalaman",
+    "expand": "Palawakin",
+    "collapse": "I-collapse"
+  },
+  "footer": {
+    "rights": "Lahat ng karapatan ay nakalaan"
+  }
+} 

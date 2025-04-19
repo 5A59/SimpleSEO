@@ -1,0 +1,24 @@
+{
+  "nav": {
+    "home": "Home",
+    "guide": "Guida",
+    "tools": "Strumenti"
+  },
+  "common": {
+    "language": "Lingua",
+    "darkMode": "Modalità scura",
+    "lightMode": "Modalità chiara"
+  },
+  "home": {
+    "title": "SimpleSEO",
+    "description": "Uno strumento SEO semplice ed elegante"
+  },
+  "toc": {
+    "title": "Indice",
+    "expand": "Espandi",
+    "collapse": "Contrai"
+  },
+  "footer": {
+    "rights": "Tutti i diritti riservati"
+  }
+} 

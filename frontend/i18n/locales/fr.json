@@ -1,0 +1,24 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "guide": "Guide",
+    "tools": "Outils"
+  },
+  "common": {
+    "language": "Langue",
+    "darkMode": "Mode sombre",
+    "lightMode": "Mode clair"
+  },
+  "home": {
+    "title": "SimpleSEO",
+    "description": "Un outil SEO simple et élégant"
+  },
+  "toc": {
+    "title": "Table des matières",
+    "expand": "Développer",
+    "collapse": "Réduire"
+  },
+  "footer": {
+    "rights": "Tous droits réservés"
+  }
+} 

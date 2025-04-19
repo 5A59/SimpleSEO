@@ -18,19 +18,7 @@
 
 준비되셨다면, 시작해 봅시다.
 
-<!-- ignore start -->
 
-## 목차
-* [초고속 버전, 10분 안에 보고 바로 적용하기](#초고속-버전-10분-안에-보고-바로-적용하기)
-* [상세 버전](#상세-버전)
-  * [1. 키워드 찾기](#1-키워드-찾기)
-  * [2. SEO 콘텐츠 작성법](#2-seo-콘텐츠-작성법)
-  * [3. 페이지 SEO](#3-페이지-seo)
-  * [4. 외부 링크](#4-외부-링크)
-  * [5. 기타 최적화](#5-기타-최적화)
-  * [6. SEO 도구](#6-seo-도구)
-
-<!-- ignore end -->
 
 ## 초고속 버전, 10분 안에 보고 바로 적용하기
 
@@ -177,8 +165,8 @@ Next.js, Nuxt.js 등과 같은 프레임워크를 사용하면 SEO 작업을 많
 
 ## 상세 버전
 
-<details>
-<summary><h2>1. 키워드 찾기</h2></summary>
+
+<h2>1. 키워드 찾기</h2>
 
 ### 첫 번째 단계: "시드 키워드" 생각하기
 
@@ -283,12 +271,12 @@ Google Ads 계정이 있는 경우 (무료로 등록할 수 있으며, 광고 �
  * [Google Keyword Planner](https://ads.google.com/home/tools/keyword-planner/) (Ads 계정 필요, 무료)
  * [Ahrefs Webmaster Tools](https://ahrefs.com/webmaster-tools): 더욱 강력한 무료 도구 모음이지만 자신의 웹사이트 소유권을 확인해야 합니다. 웹사이트가 현재 어떤 키워드로 순위가 매겨지고 있는지 확인하고 경쟁이 낮은 키워드를 발견할 수 있습니다.
 
-</details>
+
 
 ---
 
-<details>
-<summary><h2>2. SEO 콘텐츠 작성법</h2></summary>
+
+<h2>2. SEO 콘텐츠 작성법</h2>
 
 ### 1단계: 사용자가 무엇을 보고 싶어 하는지 파악 (검색 의도 분석)
 
@@ -345,12 +333,12 @@ Google Ads 계정이 있는 경우 (무료로 등록할 수 있으며, 광고 �
 
 ---
 
-</details>
+
 
 ---
 
-<details>
-<summary><h2>3. 페이지 SEO</h2></summary>
+
+<h2>3. 페이지 SEO</h2>
 
 ### 첫 번째 단계: 검색 엔진과 사용자가 페이지를 "이해"하도록 만들기
 
@@ -479,12 +467,12 @@ Google Ads 계정이 있는 경우 (무료로 등록할 수 있으며, 광고 �
 * [Google Search Console](https://search.google.com/search-console/) (순위, 경험 문제, 키워드 모니터링)
 * [Schema.dev Schema Generator](https://schema.dev/schema-generator/) (스키마 코드 생성)
 
-</details>
+
 
 ---
 
-<details>
-<summary><h2>4. 외부 링크</h2></summary>
+
+<h2>4. 외부 링크</h2>
 
 ### 외부 링크란 무엇인가요?
 
@@ -556,12 +544,12 @@ Google Ads 계정이 있는 경우 (무료로 등록할 수 있으며, 광고 �
  * [Ahrefs Free Backlink Checker](https://ahrefs.com/zh/backlink-checker): 웹사이트(경쟁사 포함)의 상위 100개 외부 링크를 빠르게 확인하고 링크를 어디서 얻었는지 파악합니다.
  * [Google Alerts](https://www.google.com/alerts): 당신의 브랜드 이름, 웹사이트 이름, 핵심 주제와 관련된 알림을 설정합니다. 온라인에서 관련 새 콘텐츠가 나타나면 이메일 알림을 받게 됩니다. 이는 다른 사람이 당신을 언급했지만 링크를 추가하지 않은 경우를 발견하는 데 도움이 됩니다(추가하도록 요청할 수 있음). 또는 새로운 링크 구축 기회를 발견하는 데 도움이 됩니다.
 
-</details>
+
 
 ---
 
-<details>
-<summary><h2>5. 기타 최적화</h2></summary>
+
+<h2>5. 기타 최적화</h2>
 
 1.  **색인 확인:** [Google Search Console](https://search.google.com/search-console/about) (무료, 이하 GSC)에서 "URL 검사" 기능을 사용하여 중요한 페이지를 Google에서 찾을 수 있는지 확인합니다.
 2.  **깨진 링크 수정:** URL을 변경했거나 페이지를 삭제한 경우 [Ahrefs Webmaster Tools](https://ahrefs.com/webmaster-tools) (무료, 이하 AWT)를 사용하여 404로 변경되었지만 이전에 외부 링크가 있었던 페이지를 찾고 301 리디렉션으로 새 페이지로 리디렉션합니다.
@@ -632,12 +620,12 @@ Google Ads 계정이 있는 경우 (무료로 등록할 수 있으며, 광고 �
         }
         ```
 
-</details>
+
 
 ---
 
-<details>
-<summary><h2>6. SEO 도구</h2></summary>
+
+<h2>6. SEO 도구</h2>
 
 ### 무료 도구
 * **[Ahrefs Free Keyword Generator](https://ahrefs.com/keyword-generator):** 키워드를 찾는 데 사용됩니다.
@@ -667,7 +655,7 @@ Google Ads 계정이 있는 경우 (무료로 등록할 수 있으며, 광고 �
 * **[ChatGPT (고급 버전)](https://openai.com/chatgpt/):** 더욱 강력한 AI 모델입니다.
 * **산업 디렉토리/리뷰 웹사이트(고급 기능/광고):** [Capterra](https://www.capterra.com/), [G2](https://www.g2.com/)와 같이 유료 프로모션 또는 고급 분석 기능을 제공할 수 있습니다.
 
-</details>
+
 
 ---
 

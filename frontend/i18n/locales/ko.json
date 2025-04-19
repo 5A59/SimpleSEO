@@ -1,0 +1,24 @@
+{
+  "nav": {
+    "home": "홈",
+    "guide": "가이드",
+    "tools": "도구"
+  },
+  "common": {
+    "language": "언어",
+    "darkMode": "다크 모드",
+    "lightMode": "라이트 모드"
+  },
+  "home": {
+    "title": "SimpleSEO",
+    "description": "간단하고 우아한 SEO 도구"
+  },
+  "toc": {
+    "title": "목차",
+    "expand": "펼치기",
+    "collapse": "접기"
+  },
+  "footer": {
+    "rights": "모든 권리 보유"
+  }
+} 

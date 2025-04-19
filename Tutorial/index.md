@@ -1,573 +1,574 @@
-# 懒人 SEO 教程
+# Simple SEO Tutorial
 
-## 教程宗旨
+## Tutorial Goal
 
-本教程的目的是，看完以后照着做，你可以把网站的 SEO 做到 80 分，即便你不知道为什么，甚至不用你知道 SEO 是什么。
+The aim of this tutorial is simple: follow the steps, and you'll achieve 80% of your website's SEO potential. You don't need to understand the "why" or even what SEO is – just follow the instructions.
 
-所以本教程不会告诉你什么是 SEO，也不会教你 SEO 的理论知识，只会告诉你“怎么做好 SEO”。
+Therefore, this tutorial will not delve into "what is SEO" or the theoretical aspects. It focuses solely on "how to do SEO" effectively.
 
-所以，如果你想学“what is seo”, “how does seo work”，推荐看看[教程原版](https://ahrefs.com/blog/zh/how-do-search-engines-work/)。
+If you're looking for explanations on "what is SEO" or "how does SEO work," I recommend checking out the original tutorial here: [Tutorial Source](https://ahrefs.com/blog/zh/how-do-search-engines-work/).
 
-如果你想学“how to do seo”，这个教程很适合你。
+If you're after practical guidance on "how to do SEO," this tutorial is perfect for you.
 
-不过看之前也请你记住，这是"术"，不是"道"。
+This tutorial is 90% distilled from the Ahrefs SEO tutorial. Think of it as a concentrated version of the original.
 
-本教程90%的内容来源于 Ahrefs SEO 教程，可以认为是原教程的蒸馏版。
+You can find the full Ahrefs SEO tutorial here: https://ahrefs.com/blog/zh/how-do-search-engines-work/. Take a look when you have the time.
 
-这里是 Ahrefs SEO 教程原版，如果有时间，推荐看看：https://ahrefs.com/blog/zh/how-do-search-engines-work/
-
-如果你准备好了，开始吧。
+If you're ready, let's begin!
 
 <!-- ignore start -->
 
-## 目录
-* [极速版，10分钟看完就能上手](#极速版，10分钟看完就能上手)
-* [详细版](#详细版)
-  * [1、找到关键词](#1找到关键词)
-  * [2、SEO 内容怎么写](#2seo-内容怎么写)
-  * [3、页面 SEO](#3页面-seo)
-  * [4、外部链接](#4外部链接)
-  * [5、其他优化](#5其他优化)
-  * [6、SEO 工具](#6seo-工具)
+## Table of Contents
+* [The Quick Start Guide: Implementable in 10 Minutes](#the-quick-start-guide-implementable-in-10-minutes)
+* [The Detailed Guide](#the-detailed-guide)
+  * [1. Keyword Research](#1-keyword-research)
+  * [2. Crafting SEO Content](#2-crafting-seo-content)
+  * [3. On-Page SEO](#3-on-page-seo)
+  * [4. Building External Links (Backlinks)](#4-building-external-links-backlinks)
+  * [5. Other Optimizations](#5-other-optimizations)
+  * [6. SEO Tools](#6-seo-tools)
 
 <!-- ignore end -->
 
-## 极速版，10分钟看完就能上手
+## The Quick Start Guide: Implementable in 10 Minutes
 
-### 0、网站一定要做成静态网页或者后端渲染
+### 0. Ensure Your Website is Static or Server-Side Rendered
 
-很多新手可能会忽略，最后发现做了SEO但是没效果。
+Many beginners overlook this, only to find their SEO efforts are ineffective.
 
-**为什么？** 
+**Why?**
 
-因为搜索引擎爬虫（比如 Googlebot）可以直接读取静态网页或后端渲染生成的 HTML 内容，更容易抓取和理解你的网页。
+Search engine crawlers (like Googlebot) can directly read HTML content from static or server-side rendered pages. This makes it much easier for them to crawl and understand your website.
 
-而一些用 JavaScript 在浏览器里才生成内容的网站（客户端渲染），爬虫需要花更多时间，甚至谷歌会不会运行这些js代码还不确定，影响收录和排名。
+Websites that rely on JavaScript to generate content within the browser (client-side rendering) require crawlers to spend more time, and there's no guarantee Google will even execute the JavaScript. This impacts indexing and ranking.
 
-同时，静态或后端渲染的网页通常加载更快，用户体验更好，这也是 Google 看重的点。
+Also, static or server-side rendered pages typically load faster, providing a better user experience—something Google values highly.
 
-建议使用 next.js、nuxt.js 等框架，帮你做了很多 SEO 的工作。
+Consider using frameworks like Next.js or Nuxt.js. They handle many SEO aspects for you.
 
-### 1、找到关键词
+### 1. Keyword Research
 
-1. 想几个跟你的业务/网站相关的词 (比如这个网站是 SEO 教程相关的，就想"SEO"、"关键词研究"、"页面优化"等)。
-2. 使用关键词研究工具（比如 Ahrefs 的 Free Keyword Generator，Google 的 Keyword Planner，Semrush 等等），找到更多相关的词。
-3. 挑一些你觉得靠谱的词记下来。
-4. 让GPT帮你找到更多关键词。
+1. Brainstorm words related to your business/website (e.g., for an SEO tutorial site, consider "SEO," "keyword research," "on-page optimization," etc.).
+2. Use keyword research tools (like Ahrefs' Free Keyword Generator, Google Keyword Planner, Semrush, etc.) to find more related terms.
+3. Jot down the most promising keywords.
+4. Use GPT to help you find even more keywords.
 
-选词要点：
-* 关键词要跟你的业务/网站相关。
-* 关键词要能带来流量。
-* 关键词要有一定的搜索量，太冷门的关键词就算了。
-* KD（关键词难度，在关键词研究工具里可以看到）越低越好，越低说明竞争越小，越容易排名。
+Key Considerations for Keyword Selection:
 
-### 2、写内容
+* Relevance: Keywords must be relevant to your business/website.
+* Traffic Potential: Keywords should have the potential to drive traffic.
+* Search Volume: Target keywords with reasonable search volume, avoiding overly niche terms.
+* Keyword Difficulty (KD): Aim for lower KD scores (available in keyword research tools). Lower KD indicates less competition and easier ranking.
 
-1. **看对手:** Google 搜你的词，看排前面的内容**写了啥 (类型、格式、角度)**。
-2. **对齐意图:** 满足用户搜索这个词时想看的信息 (类型、格式、角度)。
-3. **写干货:** 分享**真经验**，解决用户问题，展示自己的专业和经验。
-4. **求全面:** 覆盖用户可能想知道的**相关点**，尽量比对手更全一点。
-5. **加亮点:** 提供点**别人没有**的独特信息或技巧。
-6. **易阅读:** 用**短句、分段、加图**，检查错别字。
-7. **勤更新:** 一定要及时更新过时信息。
+### 2. Content Creation
 
-### 3、优化页面
+1. **Analyze Competitors:** Google your target keywords and analyze what's working for the top-ranking content (type, format, angle).
+2. **Match Search Intent:** Fulfill the information needs of users searching for the keyword (type, format, angle).
+3. **Provide Value:** Share genuine experience, solve user problems, and demonstrate expertise.
+4. **Be Comprehensive:** Cover all relevant aspects users might want to know, aiming for more thoroughness than competitors.
+5. **Add Unique Insights:** Offer unique information or techniques that others haven't covered.
+6. **Ensure Readability:** Use short sentences, paragraph breaks, and images. Proofread for typos.
+7. **Keep Content Updated:** Regularly update outdated information.
 
-1. **元标签 & 标题:**
- * **页面标题 (Title):** 吸引人、包含关键词、长度适中 (约 30 字)。(例: `<title>页面 SEO 终极指南 (2024)</title>`)
- * **H1 标签:** 每页用一个H1，概括页面主题。(例: `<h1>页面 SEO 终极指南</h1>`)
- * **H2-H6 标签:** 用于内容副标题，组织结构。
- * **元描述 (Meta Description):** 描述页面内容、吸引点击、包含关键词、长度适中 (约 80 字)。(例: `<meta name="description" content="学习页面 SEO 的所有知识，从关键词优化到技术细节，提升你的网站排名！">`)
+### 3. On-Page Optimization
 
-2. **链接:**
- * **内部链接:** 指向自己网站内其他相关页面，最好做成金字塔结构，不要留下孤岛页面，否则谷歌找不到它。(例: `<a href="/keyword-research">学习关键词研究</a>`)
- * **外部链接:** (如果需要) 指向权威信息来源或有用的外部资源。(例: `<a href="https://example.com" rel="nofollow">参考资料</a>`)
+1. **Meta Tags & Titles:**
+   * **Page Title (Title Tag):** Compelling, includes keywords, and has an optimal length (around 60 characters). (Example: `<title>The Ultimate Guide to On-Page SEO (2024)</title>`)
+   * **H1 Tag:** Use one H1 tag per page to summarize the page topic. (Example: `<h1>The Ultimate Guide to On-Page SEO</h1>`)
+   * **H2-H6 Tags:** Use for subheadings to organize content structure.
+   * **Meta Description:** Describes page content, attracts clicks, includes keywords, and has an optimal length (around 150-160 characters). (Example: `<meta name="description" content="Learn everything about on-page SEO, from keyword optimization to technical details, to boost your website ranking!">`)
 
-3. **图片:**
- * **文件名:** 使用描述性名称。(例: `page-seo-checklist.jpg`)
- * **替代文本 (Alt Text):** 添加描述图片内容的 Alt 文本。(例: `<img src="..." alt="页面 SEO 检查清单表格截图">`)
- * **压缩:** 压缩图片文件大小，加快加载速度。
+2. **Links:**
+   * **Internal Links:** Link to other relevant pages on your website, ideally creating a pyramid structure. Avoid orphaned pages that Google can't find. (Example: `<a href="/keyword-research">Learn Keyword Research</a>`)
+   * **External Links:** (If necessary) Link to authoritative sources or useful external resources. (Example: `<a href="https://example.com" rel="nofollow">Reference Material</a>`)
 
-4. **网址:**
- * **简洁描述:** URL 路径短、易懂，最好包含关键词 (英文用 `-` 分隔)。(例: `/page-seo-guide/`)
+3. **Images:**
+   * **Filename:** Use descriptive filenames. (Example: `on-page-seo-checklist.jpg`)
+   * **Alt Text:** Add descriptive alt text that describes the image content. (Example: `<img src="..." alt="Screenshot of an on-page SEO checklist">`)
+   * **Compression:** Compress image file sizes to improve loading speed.
 
-5. **体验:**
- * **页面速度 (Core Web Vitals):** 优化加载速度。
- * **移动端友好:** 确保在手机上体验良好。
- * **HTTPS:** 使用 HTTPS 加密。
- * **无干扰:** 避免过多弹窗广告。
- * **(可选) 特色片段优化:** 针对性地提供简明扼要的答案。
- * **(可选) Schema 标记:** 添加结构化数据帮助 Google 理解内容。
+4. **URL Structure:**
+   * **Concise & Descriptive:** URLs should be short, easy to understand, and ideally include keywords (use `-` to separate words). (Example: `/on-page-seo-guide/`)
 
-### 4、加外链
-1.  **写好内容:** 努力把内容写得**特别棒、特别有用**，让别人看了就想引用你的文章或推荐你的工具。(这是最核心、最持久的方法)
-2.  **提交外链:** 把你的网站提交到**几个最重要、最权威的行业目录网站**上 (比如到航站等等)。
-3.  **写投稿:** 如果你喜欢写作，可以尝试给和你主题相关的其他网站**写客座博客**，文章里可以自然地放一个指向你网站的链接。
-4.  **千万别买链接:** Ahrefs **强烈不建议**购买链接，风险极高，可能浪费钱还导致网站被 Google 惩罚。
+5. **User Experience:**
+   * **Page Speed (Core Web Vitals):** Optimize loading speed.
+   * **Mobile-Friendliness:** Ensure a good mobile experience.
+   * **HTTPS:** Use HTTPS encryption.
+   * **Avoid Intrusive Pop-ups:** Minimize distracting advertising.
+   * **(Optional) Featured Snippet Optimization:** Provide concise answers to specific questions.
+   * **(Optional) Schema Markup:** Add structured data to help Google understand your content.
 
-### 5、其他
-1.  **查收录:** 去 [Google Search Console](https://search.google.com/search-console/about) (免费，后面简称 GSC)，用 "网址检查" 功能看看你的重要页面 Google 能不能找到。
-2.  **修死链:** 如果你改过网址或删过页面，用 [Ahrefs Webmaster Tools](https://ahrefs.com/webmaster-tools) (免费，后面简称 AWT) 找到那些变成 404 但以前有外部链接的页面，把它们用 301 重定向到新页面。
-3.  **适配多语言:** 如果你的网站竞争很大，尝试适配多语言，很多网站只在英文上竞争，你适配多语言后，可以获得更多流量。
-4.  **创建Sitemap:** 创建一个 `sitemap.xml` 文件，列出你网站上所有重要的页面，并提交给 Google Search Console，帮助 Google 更快、更全面地发现你的内容。
-    *   **示例 (sitemap.xml 基础结构):**
-        ```xml
-        <?xml version="1.0" encoding="UTF-8"?>
-        <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-           <url>
-              <loc>http://www.example.com/page1.html</loc>
-              <lastmod>2024-01-01</lastmod>
-              <changefreq>monthly</changefreq>
-              <priority>0.8</priority>
-           </url>
-           <url>
-              <loc>http://www.example.com/page2.html</loc>
-           </url>
-        </urlset>
-        ```
-5.  **Hreflang (多语言标签):** 如果你的网站有多种语言或针对不同地区的内容，使用 `hreflang` 标签告诉 Google 每个页面的不同语言/地区版本，避免内容重复问题，确保向正确的用户展示正确的版本。
-    *   **示例 (HTML `<head>` 中):**
-        ```html
-        <link rel="alternate" hreflang="en-us" href="http://www.example.com/en/page.html" />
-        <link rel="alternate" hreflang="zh-cn" href="http://www.example.com/zh/page.html" />
-        <link rel="alternate" hreflang="x-default" href="http://www.example.com/page.html" />
-        ```
-        *(注: `x-default` 用于指定默认或无特定语言区域的版本)*
-6.  **Robots.txt (爬虫协议):** 在网站根目录放一个 `robots.txt` 文件，告诉搜索引擎爬虫哪些页面或目录你不希望它们访问或收录（比如后台管理页面、测试页面等）。
-    *   **示例 (robots.txt 内容):**
-        ```
-        User-agent: *          # 应用于所有爬虫
-        Disallow: /admin/       # 禁止访问 /admin/ 目录
-        Disallow: /private.html # 禁止访问 /private.html 文件
-        Allow: /public/        # 明确允许访问 /public/ 目录 (如果上级目录被禁止)
+### 4. Building Backlinks (External Links)
 
-        User-agent: Googlebot   # 只应用于 Google 爬虫
-        Disallow: /tmp/         # 禁止 Google 爬虫访问 /tmp/ 目录
-        Sitemap: http://www.example.com/sitemap.xml # 指明 Sitemap 位置
-        ```
-7.  **Canonical (规范标签):** 如果你的网站上有内容相同或高度相似的多个页面（例如带参数的 URL），使用 `canonical` 标签指定哪个是"官方"版本，避免搜索引擎将它们视为重复内容而分散权重。
-    *   **示例 (HTML `<head>` 中):**
-        ```html
-        <link rel="canonical" href="http://www.example.com/product-page" />
-        ```
-        *(注: 即使在 `http://www.example.com/product-page?ref=banner` 这个页面上，也要指向不带参数的规范 URL)*
-8.  **Schema Markup (结构化数据):** 在页面代码中添加 Schema 标记，用一种标准化的格式向 Google 解释页面内容的含义（比如这是食谱、产品、FAQ），有助于 Google 理解内容，并可能在搜索结果中显示更丰富的样式（如评分、价格范围等），提升点击率。
-    *   **示例 (JSON-LD 格式，放在 `<script>` 标签中):**
-        ```json
-        {
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": [{
-            "@type": "Question",
-            "name": "什么是 SEO？",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "SEO (搜索引擎优化) 是指通过优化网站内容和技术等方面，提高网站在搜索引擎（如 Google）自然搜索结果中排名的过程。"
-            }
-          },{
-            "@type": "Question",
-            "name": "SEO 需要多长时间见效？",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "SEO 的效果显现时间因网站基础、竞争程度、投入资源等多种因素而异，通常需要数周到数月甚至更长时间才能看到明显效果。"
-            }
-          }]
-        }
-        ```
+1. **Create Exceptional Content:** Focus on creating content that is exceptionally useful and valuable, making others want to link to your articles or recommend your tools (this is the most crucial and sustainable approach).
+2. **Submit to Directories:** Submit your website to a few of the most important and authoritative industry directories (e.g., industry-specific resource lists).
+3. **Guest Blogging:** If you enjoy writing, consider writing guest blog posts for other websites related to your topic. You can naturally include a link to your website in the article.
+4. **Avoid Buying Links:** Ahrefs strongly advises against buying links. It's extremely risky, can be a waste of money, and could even result in Google penalizing your website.
 
-## 详细版
+### 5. Other Optimizations
+
+1. **Check Indexing:** Use the "URL Inspection" tool in Google Search Console (GSC, free) to ensure Google can find your important pages.
+2. **Fix Broken Links:** If you've changed URLs or deleted pages, use Ahrefs Webmaster Tools (AWT, free) to find pages that are now 404s but previously had external links. Redirect them to the new, relevant pages using 301 redirects.
+3. **Adapt to Multiple Languages:** If your niche is highly competitive, consider adapting your content to multiple languages. Many websites only compete in English, so translating your content can unlock more traffic.
+4. **Create a Sitemap:** Create a `sitemap.xml` file listing all important pages on your website and submit it to Google Search Console. This helps Google discover your content faster and more comprehensively.
+   * **Example (Basic sitemap.xml Structure):**
+     ```xml
+     <?xml version="1.0" encoding="UTF-8"?>
+     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+        <url>
+           <loc>http://www.example.com/page1.html</loc>
+           <lastmod>2024-01-01</lastmod>
+           <changefreq>monthly</changefreq>
+           <priority>0.8</priority>
+        </url>
+        <url>
+           <loc>http://www.example.com/page2.html</loc>
+        </url>
+     </urlset>
+     ```
+5. **Hreflang (Multilingual Tags):** If your website has content in multiple languages or targeting different regions, use `hreflang` tags to tell Google about the different language/regional versions of each page. This prevents duplicate content issues and ensures the correct version is shown to the right users.
+   * **Example (In HTML `<head>`):**
+     ```html
+     <link rel="alternate" hreflang="en-us" href="http://www.example.com/en/page.html" />
+     <link rel="alternate" hreflang="zh-cn" href="http://www.example.com/zh/page.html" />
+     <link rel="alternate" hreflang="x-default" href="http://www.example.com/page.html" />
+     ```
+     *(Note: `x-default` is used to specify the default or non-language-specific version)*
+6. **Robots.txt (Crawler Instructions):** Place a `robots.txt` file in your website's root directory to instruct search engine crawlers which pages or directories you don't want them to access or index (e.g., admin pages, test pages).
+   * **Example (robots.txt Content):**
+     ```
+     User-agent: *          # Applies to all crawlers
+     Disallow: /admin/       # Disallow access to /admin/ directory
+     Disallow: /private.html # Disallow access to /private.html file
+     Allow: /public/        # Explicitly allow access to /public/ directory (if a parent directory is disallowed)
+
+     User-agent: Googlebot   # Applies only to Google crawlers
+     Disallow: /tmp/         # Disallow Google crawlers from accessing /tmp/ directory
+     Sitemap: http://www.example.com/sitemap.xml # Specify Sitemap location
+     ```
+7. **Canonical Tags:** If your website has multiple pages with identical or very similar content (e.g., URLs with parameters), use `canonical` tags to specify which is the "official" version. This prevents search engines from treating them as duplicate content and diluting their ranking potential.
+   * **Example (In HTML `<head>`):**
+     ```html
+     <link rel="canonical" href="http://www.example.com/product-page" />
+     ```
+     *(Note: Even on `http://www.example.com/product-page?ref=banner`, point to the canonical URL without parameters)*
+8. **Schema Markup (Structured Data):** Add Schema markup to your page code to explain the meaning of the content to Google in a standardized format (e.g., this is a recipe, a product, an FAQ). This helps Google understand the content and may display richer snippets in search results (like ratings, price ranges, etc.), improving click-through rates.
+   * **Example (JSON-LD Format, placed in a `<script>` tag):**
+     ```json
+     {
+       "@context": "https://schema.org",
+       "@type": "FAQPage",
+       "mainEntity": [{
+         "@type": "Question",
+         "name": "What is SEO?",
+         "acceptedAnswer": {
+           "@type": "Answer",
+           "text": "SEO (Search Engine Optimization) is the process of improving the ranking of a website in the organic search results of search engines (like Google) by optimizing its content and technical aspects."
+         }
+       },{
+         "@type": "Question",
+         "name": "How long does SEO take to show results?",
+         "acceptedAnswer": {
+           "@type": "Answer",
+           "text": "The time it takes for SEO to show results varies depending on factors such as website foundation, competition, and resources invested. It typically takes weeks to months or even longer to see significant effects."
+         }
+       }]
+     }
+     ```
+
+## The Detailed Guide
 
 <details>
-<summary><h2>1、找到关键词</h2></summary>
+<summary><h2>1. Keyword Research</h2></summary>
 
-### 第一步：想"种子关键词"
+### Step 1: Brainstorm "Seed Keywords"
 
-"种子关键词"就是最基础、最核心的词。别想太复杂，问自己几个问题：
+"Seed keywords" are your most basic, core terms. Don't overthink it. Ask yourself:
 
-* 别人会怎么在网上搜你的东西？(例如："便宜的咖啡豆"、"怎么做手冲咖啡")
-* 你的竞争对手网站上都用了哪些词？
-* 如果你是顾客，你会搜什么？
+* How would people search for your products/services online? (e.g., "cheap coffee beans," "how to make pour-over coffee")
+* What keywords are your competitors using on their websites?
+* If you were a customer, what would you search for?
 
-**例子：** 
-假设你开了一个卖咖啡豆的网店，你的种子关键词可能包括：
-* 咖啡豆
-* 阿拉比卡咖啡豆
-* 手冲咖啡
-* 咖啡机
-* 买咖啡豆
+**Example:**
+Let's say you run an online coffee bean store. Your seed keywords might include:
+* Coffee beans
+* Arabica coffee beans
+* Pour-over coffee
+* Coffee maker
+* Buy coffee beans
 
-**小技巧：** 
+**Pro Tip:**
 
-实在想不出来？可以试试问 ChatGPT (或者AI)，让它帮你头脑风暴一些和你的业务相关的词。
+Stuck for ideas? Ask ChatGPT (or another AI) to brainstorm words related to your business.
 
-把你想到的都列下来，越多越好。
+List everything that comes to mind—the more, the better.
 
-### 第二步：用免费工具找到更多的关键词
+### Step 2: Find More Keywords with Free Tools
 
-光靠拍脑袋想不够多，用工具帮你找更多相关的词，不需要全用，选几个适合自己的就行。
+Brainstorming isn't enough. Use tools to find more related terms. You don't need to use them all—just pick the ones that suit you.
 
-**工具 1：Ahrefs Free Keyword Generator** (推荐，完全免费)
+**Tool 1: Ahrefs Free Keyword Generator** (Recommended, completely free)
 
-1. 打开 [Ahrefs Free Keyword Generator](https://ahrefs.com/keyword-generator)。
-2. 把你刚才想到的"种子关键词"一个一个输进去。
-3. 选择你的目标国家 (比如：中国)。
-4. 点击"Find keywords"。
+1. Go to [Ahrefs Free Keyword Generator](https://ahrefs.com/keyword-generator).
+2. Enter each of your "seed keywords" one by one.
+3. Select your target country (e.g., United States).
+4. Click "Find keywords."
 
-你会看到一堆相关的关键词建议，重点关注这两类：
+You'll see a list of related keyword suggestions. Focus on these two categories:
 
-* **Phrase Match (词组匹配):** 包含你种子词的词组。比如搜"咖啡豆"，可能会看到"有机咖啡豆"、"云南咖啡豆"。
-* **Questions (问题):** 包含你种子词的问句。比如搜"手冲咖啡"，可能会看到"手冲咖啡需要哪些工具"、"手冲咖啡怎么做才好喝"。
+* **Phrase Match:** Phrases that contain your seed keyword. For example, searching for "coffee beans" might show "organic coffee beans" or "best coffee beans."
+* **Questions:** Questions that contain your seed keyword. For example, searching for "pour-over coffee" might show "what tools do I need for pour-over coffee" or "how to make good pour-over coffee."
 
 ![](https://ahrefs.com/blog/zh/wp-content/uploads/2021/02/search-volume.png)
 
-*图片示例：使用像 Ahrefs 这样的关键词工具查找"aeropress"相关的关键词，可以看到月搜索量等信息。免费工具界面类似，会提供关键词列表。*
+*Image Example: Using a keyword tool like Ahrefs to find keywords related to "aeropress" and see their monthly search volume. The free tool interface is similar and will provide a keyword list.*
 
-**工具 2：Google 搜索框 & 相关搜索**
+**Tool 2: Google Search Box & Related Searches**
 
-1. 打开 Google 搜索。
-2. 输入你的种子关键词，看看搜索框自动弹出的建议 (Google Suggest)。这些都是大家经常搜的。
-3. 搜完之后，拉到页面最下面，看"相关搜索"部分。这里也是找相关词的好地方。
+1. Open Google Search.
+2. Enter your seed keyword and see the suggestions that automatically pop up (Google Suggest). These are popular searches.
+3. After searching, scroll to the bottom of the page and look at the "Related searches" section. This is another great place to find related terms.
 
 ![](https://ahrefs.com/blog/zh/wp-content/uploads/2021/02/autosuggest.png)
 
-**工具 3：Answer The Public**
+**Tool 3: Answer The Public**
 
-1. 打开 [Answer The Public](https://answerthepublic.com/)。
-2. 输入你的种子关键词 (建议用英文，效果可能更好)。
-3. 选择国家/语言。
-4. 它会生成一堆围绕你的关键词的问题、介词短语、比较等，帮你了解用户具体在搜什么疑问。免费版有每日使用次数限制。
+1. Go to [Answer The Public](https://answerthepublic.com/).
+2. Enter your seed keyword (English is recommended for better results).
+3. Select country/language.
+4. It will generate a bunch of questions, prepositional phrases, and comparisons related to your keyword, helping you understand what specific questions users are searching for. The free version has daily usage limits.
 
 ![](https://ahrefs.com/blog/wp-content/uploads/2023/03/image17-9-1.jpg)
 
-**工具 4：Google Trends** (看热度，找趋势)
+**Tool 4: Google Trends** (See Popularity and Trends)
 
-1. 打开 [Google Trends](https://trends.google.com/)。
-2. 输入你的种子关键词。
-3. 可以看这个词的搜索热度变化趋势，发现季节性变化或突然爆火的话题。
-4. 还可以看相关的查询，找到人们同时在搜的其他热门词汇。
+1. Go to [Google Trends](https://trends.google.com/).
+2. Enter your seed keyword.
+3. You can see the search interest trend for this keyword and identify seasonal changes or suddenly trending topics.
+4. You can also see related queries to find other popular terms people are searching for at the same time.
 
-**工具 5: ChatGPT**
+**Tool 5: ChatGPT**
 
-1. 打开 [ChatGPT](https://chat.openai.com/) 或其他类似的 AI 工具。
-2. 让它基于你的种子关键词生成更多相关的关键词、主题或问题。例如，你可以问："我是卖咖啡豆的，请给我一些人们可能会搜索的相关关键词或问题"。
+1. Open [ChatGPT](https://chat.openai.com/) or another similar AI tool.
+2. Ask it to generate more related keywords, topics, or questions based on your seed keywords. For example, you can ask, "I sell coffee beans. Please give me some related keywords or questions that people might search for."
 
-**工具 6：Google Keyword Planner** (免费，但需要 Google Ads 账号)
+**Tool 6: Google Keyword Planner** (Free, but requires a Google Ads account)
 
-如果你有 Google Ads 账号 (没有可以免费注册一个，投放广告就不用花钱)，可以用 Keyword Planner。
+If you have a Google Ads account (you can register for free; you don't need to spend money on ads), you can use Keyword Planner.
 
-1. 登录 Google Ads，找到"工具与设置" -> "规划" -> "关键字规划师"。
-2. 选择"发现新关键字"。
-3. 输入你的种子关键词。
+1. Log in to Google Ads, find "Tools & Settings" -> "Planning" -> "Keyword Planner."
+2. Select "Discover new keywords."
+3. Enter your seed keywords.
 
-它会提供搜索量估算和更多关键词建议。不过免费版显示的搜索量是一个范围，没那么精确。
+It will provide search volume estimates and more keyword suggestions. However, the free version shows search volume ranges, which aren't as precise.
 
-### 第三步：去论坛/社区/贴吧/问答网站逛逛
+### Step 3: Browse Forums/Communities/Online Groups/Q&A Sites
 
-* **逛逛相关论坛/社区/贴吧/问答网站:** 比如你是搞咖啡的，就去咖啡爱好者论坛、知乎相关话题、豆瓣小组看看大家都在问什么、讨论什么、用什么词。
-* **看看评论区:** 你的竞争对手网站、相关产品的电商页面、社交媒体帖子的评论区，也可能藏着用户真实的搜索词。
+* **Browse relevant forums/communities/online groups/Q&A sites:** If you're in the coffee business, go to coffee enthusiast forums, relevant topics on Quora, and groups on Reddit to see what people are asking, discussing, and using as search terms.
+* **Check comment sections:** The comment sections of your competitors' websites, e-commerce pages for related products, and social media posts can also hide real search terms used by users.
 
-**例子：** 在一个咖啡论坛里看到有人问"不用滤纸怎么做手冲"，这可能就是一个你之前没想到的好关键词！
+**Example:** Seeing someone ask "how to make pour-over coffee without a filter" in a coffee forum might be a great keyword you hadn't thought of!
 
 ![](https://ahrefs.com/blog/wp-content/uploads/2020/11/reddit-1.png)
 
 ---
 
-### 关键词工具包
+### Keyword Research Toolkit
 
-* **工具包:**
- * [Ahrefs Free Keyword Generator](https://ahrefs.com/keyword-generator) (主力，免费)
- * Google 搜索框 & 相关搜索 (辅助，免费)
- * [Answer The Public](https://answerthepublic.com/) (找问题，免费，有日限)
- * [Google Trends](https://trends.google.com/) (看趋势，免费)
- * [ChatGPT](https://chat.openai.com/) (AI brainstorm，免费)
- * [Google Keyword Planner](https://ads.google.com/home/tools/keyword-planner/) (需要 Ads 账号，免费)
- * [Ahrefs Webmaster Tools](https://ahrefs.com/webmaster-tools):** 功能更强的免费工具集，但需要验证你拥有自己的网站。可以看到自己网站目前有哪些关键词排名，以及发现低竞争度关键词等。
-
-</details>
-
----
-
-<details>
-<summary><h2>2、SEO 内容怎么写</h2></summary>
-
-### 步骤 1: 搞懂用户想看啥 (分析搜索意图)
-
-一定要知道搜这个词的人想看什么类型、格式、角度的内容。
-
-1. Google 商搜你的关键词。
-2. 看排名前 5-10 的结果：
-  * **类型:** 是文章？产品页？视频？
-  * **格式:** 是教程？清单？评测？
-  * **角度:** 是"入门"？"便宜"？"最新"？
-3. **模仿:** 你的内容类型、格式、角度要和主流保持一致。
-
-### 步骤 2: 写你懂的 (展示经验 E-E-A-T)
-
-让内容可信，展示你确实懂这个。
- * **写你亲身经历或擅长的。**
- * 用"我"分享经验和看法。
- * (如果适用) 简单提下你的背景或成果。
-
-### 步骤 3: 覆盖全面 (内容详尽)
-
-回答用户关于这个主题的多数疑问。
-
- 1. 用工具找这个关键词下的相关问题/长尾词。
- 2. 看排名靠前文章的小标题，找他们覆盖的点。
- 3. 把你找到的、认为重要的点都加到你的内容里。
-
-注意: 全面不等于啰嗦，根据用户意图写。
-
-### 步骤 4: 来点特别的 (独特性)
-
-给用户一个看你文章而不是别人的理由。
-
- * 分享一个独特的技巧、经验总结或观点。
- * 提供一个别人没有的小资源 (如模板、清单)。
- * (进阶) 做个小实验或数据分享。
-
-### 步骤 5: 让阅读变轻松 (可读性)
-
-用户看得舒服，愿意读下去。
-
- * 短句，多分段。
- * 用小标题分隔内容。
- * 配图说明或缓解疲劳。
- * 用加粗、列表突出重点。
-
-### 步骤 6: 保持更新
-
-避免内容过时导致排名下降。
-
- * 定期 (如每年) 检查: 信息还准吗？链接还有效吗？
- * 更新内容: 修改过时信息，补充新内容。
- * 标注更新日期: 让用户知道这是最新的。
-
----
+* **Toolkit:**
+  * [Ahrefs Free Keyword Generator](https://ahrefs.com/keyword-generator) (Main, free)
+  * Google Search Box & Related Searches (Auxiliary, free)
+  * [Answer The Public](https://answerthepublic.com/) (Find questions, free, daily limit)
+  * [Google Trends](https://trends.google.com/) (See trends, free)
+  * [ChatGPT](https://chat.openai.com/) (AI brainstorm, free)
+  * [Google Keyword Planner](https://ads.google.com/home/tools/keyword-planner/) (Requires Ads account, free)
+  * [Ahrefs Webmaster Tools](https://ahrefs.com/webmaster-tools): A more powerful free toolset, but you need to verify that you own your website. You can see which keywords your website currently ranks for and discover low-competition keywords, etc.
 
 </details>
 
 ---
 
 <details>
-<summary><h2>3、页面 SEO</h2></summary>
+<summary><h2>2. Crafting SEO Content</h2></summary>
 
-### 第一步：让搜索引擎和用户"看懂"你的页面
+### Step 1: Understand What Users Want to See (Analyze Search Intent)
 
-匹配搜索意图。
- * Google 搜你的关键词，看排名前 5-10 的结果。注意他们的内容类型 (文章/产品页/?)、内容格式 (教程/清单/评测/?) 和内容角度 ("入门"/"便宜"/"最新"?)。
- * 你的内容要和他们保持一致，给用户他们想看的东西。
+It's crucial to know what type, format, and angle of content people are looking for when they search for a particular keyword.
+
+1. Google your target keyword.
+2. Look at the top 5-10 results:
+   * **Type:** Is it an article? A product page? A video?
+   * **Format:** Is it a tutorial? A checklist? A review?
+   * **Angle:** Is it "beginner-friendly"? "Cheap"? "Latest"?
+3. **Imitate:** Your content type, format, and angle should align with what's already working.
+
+### Step 2: Write About What You Know (Demonstrate Experience, Expertise, Authoritativeness, and Trustworthiness - E-E-A-T)
+
+Make your content credible and show that you truly understand the subject.
+  * Write about your personal experiences or areas of expertise.
+  * Share your experiences and opinions using "I."
+  * (If applicable) Briefly mention your background or achievements.
+
+### Step 3: Be Comprehensive (Cover Everything)
+
+Answer most of the user's questions about the topic.
+
+1. Use tools to find related questions/long-tail keywords for the keyword.
+2. Look at the subheadings in the top-ranking articles and see what points they cover.
+3. Add the points you find that are important to your content.
+
+Note: Comprehensive doesn't mean verbose. Write according to user intent.
+
+### Step 4: Add Something Special (Uniqueness)
+
+Give users a reason to read your article instead of someone else's.
+
+* Share a unique technique, experience summary, or point of view.
+* Provide a small resource that others don't have (such as a template or checklist).
+* (Advanced) Conduct a small experiment or data sharing.
+
+### Step 5: Make Reading Easy (Readability)
+
+Users feel comfortable reading and are willing to continue reading.
+
+* Use short sentences and many paragraph breaks.
+* Use subheadings to separate the content.
+* Use illustrations to explain or relieve fatigue.
+* Use bolding and lists to highlight key points.
+
+### Step 6: Keep Content Updated
+
+Avoid declining rankings due to outdated content.
+
+* Check periodically (such as annually): Is the information still accurate? Are the links still valid?
+* Update content: Modify outdated information and supplement new content.
+* Mark the update date: Let users know that this is the latest information.
+
+---
+
+</details>
+
+---
+
+<details>
+<summary><h2>3. On-Page SEO</h2></summary>
+
+### Step 1: Help Search Engines and Users "Understand" Your Page
+
+Match Search Intent.
+ * Google your keyword and analyze the top 5-10 results. Pay attention to their content type (article/product page/?), content format (tutorial/checklist/review/?), and content angle ("beginner"/"cheap"/"latest"?).
+ * Your content should align with them, giving users what they want to see.
 
  ![](https://ahrefs.com/blog/wp-content/uploads/2023/07/image16-10.jpg)
 
- *图片示例：搜索 "avocado seed" (鳄梨种子)，结果多是教你怎么种的指南文章，角度是"简单、容易"，说明用户是初学者。*
+ *Image example: Searching for "avocado seed" returns mostly guide articles on how to grow them, with the angle being "simple, easy," indicating the user is a beginner.*
 
-#### 写好"标题党" (Title Tag):
-  * 包含核心关键词。
-  * 长度最好别超过 70 个字符 (大概 30 个汉字)，不然会显示不全。
-  * 清晰、有吸引力，让人想点。
-  * 别搞纯粹的"标题党"，要和内容一致。
-  * 如果内容讲究时效性 (如教程)，可以加上年份。
-  * **工具:** 可以让 ChatGPT 帮你头脑风暴几个标题。用 Ahrefs Webmaster Tools (AWT) 的 Site Audit 检查标题是否太长或缺失。
+#### Write a Good "Headline" (Title Tag):
+  * Include the core keyword.
+  * It's best if the length does not exceed 70 characters (about 30 Chinese characters), otherwise it will not be fully displayed.
+  * Clear and attractive, making people want to click.
+  * Don't make a pure "clickbait," it must be consistent with the content.
+  * If the content emphasizes timeliness (such as a tutorial), you can add the year.
+  * **Tool:** Let ChatGPT help you brainstorm a few titles. Use Ahrefs Webmaster Tools (AWT)'s Site Audit to check whether the title is too long or missing.
 
- ![图片示例：一个好的标题例子](https://ahrefs.com/blog/wp-content/uploads/2023/07/image13-12.png)
+ ![Image example: An example of a good title](https://ahrefs.com/blog/wp-content/uploads/2023/07/image13-12.png)
 
-#### 写好"门面" (Meta Description):
-  * 这是搜索结果里标题下面的那段描述文字，虽然不直接影响排名，但影响点击率。
-  * 长度最好不超过 160 字符 (大概 80 个汉字)。
-  * 可以看作是标题的补充，放一些标题里放不下的卖点。
-  * 包含关键词 (Google 会标黑)。
-  * 用主动语态，直接告诉用户你能提供什么。
-  * **工具:** 可以让 ChatGPT 帮你写几个版本。用 Ahrefs Webmaster Tools (AWT) 的 Site Audit 检查是否缺失或太长。
- ![图片示例：一个好的 Meta 描述示例](https://ahrefs.com/blog/wp-content/uploads/2023/07/image23-4.png)
+#### Write a Good "Facade" (Meta Description):
+  * This is the descriptive text below the title in the search results. Although it does not directly affect the ranking, it affects the click-through rate.
+  * It's best if the length does not exceed 160 characters (about 80 Chinese characters).
+  * It can be regarded as a supplement to the title, highlighting some selling points that cannot be put in the title.
+  * Include keywords (Google will bold them).
+  * Use active voice and directly tell users what you can provide.
+  * **Tool:** Let ChatGPT help you write several versions. Use Ahrefs Webmaster Tools (AWT)'s Site Audit to check whether it is missing or too long.
+ ![Image example: An example of a good Meta description](https://ahrefs.com/blog/wp-content/uploads/2023/07/image23-4.png)
 
-#### 起个好"网址名" (URL):
-  * URL 路径（域名后面的部分）要短、易懂。
-  * 包含核心关键词 (用英文或拼音，单词间用 `-` 连接)。
+#### Create a Good "URL Name" (URL):
+  * The URL path (the part after the domain name) should be short and easy to understand.
+  * Include core keywords (use English or pinyin, with `-` connecting words).
  ![](https://ahrefs.com/blog/wp-content/uploads/2023/07/image20-10.png)
 
- *图片示例：`domain.com/learn-seo` 比 `domain.com/p=123` 更好*
+ *Image example: `domain.com/learn-seo` is better than `domain.com/p=123`*
 
-#### 内容要有"骨架" (Heading Tags: H1-H6):
-  * 用 H1-H6 标签组织内容，形成清晰的层级结构，方便阅读。
-  * **H1 标签:** 每页只用一个，通常和页面标题 (Title Tag) 意思一致或接近。
-  * **H2-H6 标签:** 用作各个部分的副标题。
-  * **工具:** 用 Ahrefs Webmaster Tools (AWT) 的 Site Audit 检查 H1 标签是否缺失或重复。
+#### The content should have a "skeleton" (Heading Tags: H1-H6):
+  * Use H1-H6 tags to organize content and form a clear hierarchical structure to facilitate reading.
+  * **H1 tag:** Use only one per page, usually with the same or similar meaning as the page title (Title Tag).
+  * **H2-H6 tags:** Used as subheadings for various parts.
+  * **Tool:** Use Ahrefs Webmaster Tools (AWT)'s Site Audit to check whether H1 tags are missing or duplicated.
 
  ![](https://ahrefs.com/blog/zh/wp-content/uploads/2023/11/On-Page-SEO.png)
- *图片示例：使用 H 标签创建视觉层次*
+ *Image example: Create visual hierarchy using H tags*
 
-### 第二步：写"有料"且"独特"的内容
+### Step 2: Write "Informative" and "Unique" Content
 
-#### 内容要"全":
-  * 确保你的内容覆盖了用户搜索这个关键词时可能想了解的主要方面和问题。
-  * 看看 Google 搜索结果前几名的文章都讲了哪些小标题 (H2, H3)。
-  * 看看 Google 搜索结果页底部的"相关搜索"。
-  * **工具:** (可选) 用 Ahrefs Webmaster Tools (AWT) 的 Site Explorer 查看你的网站和竞争对手网站都为哪些共同的关键词带来了流量 (Content Gap 功能)，找到你可以补充的子主题。
+#### The content should be "complete":
+  * Ensure that your content covers the main aspects and questions that users might want to know when searching for this keyword.
+  * Look at the subheadings (H2, H3) of the top articles in Google search results.
+  * Look at the "related searches" at the bottom of the Google search results page.
+  * **Tool:** (Optional) Use Ahrefs Webmaster Tools (AWT)'s Site Explorer to view which common keywords your website and your competitors' websites bring traffic (Content Gap function), and find subtopics you can supplement.
  ![](https://ahrefs.com/blog/wp-content/uploads/2023/07/image22-3.png)
- *图片示例：分析对手文章，发现他们提到了"取消订阅"作为省钱方法，你的文章也可以考虑加入这点。*
+ *Image example: Analyze competitor articles and find that they mentioned "unsubscribe" as a way to save money. Your article can also consider adding this point.*
 
-#### 内容要"特别":
-  * 别只是重复别人的话，提供一些独特的价值。
-  * 可以是：你独到的见解或经验总结、一个别人没有的小技巧、一个原创的案例分析、一个免费的模板或清单。
-  * 目标是给用户一个"收藏"或"分享"你文章的理由。
+#### The content should be "special":
+  * Don't just repeat what others say, provide some unique value.
+  * It can be: your unique insights or experience summaries, a small trick that others don't have, an original case analysis, a free template or checklist.
+  * The goal is to give users a reason to "collect" or "share" your article.
 
-#### 展示你的"专业"或"经验":
-  * 如果你写的是专业领域 (如医疗、金融) 或需要亲身体验 (如产品评测) 的内容，要展示你的专业性或真实经验。
-  * 清晰说明信息来源 (引用、链接)，提供作者背景介绍 (链接到作者简介页)，分享你的操作过程或使用体验 (配图、视频)，确保内容事实准确。
+#### Show your "professionalism" or "experience":
+  * If you are writing about professional fields (such as medical, finance) or content that requires personal experience (such as product reviews), you must show your professionalism or real experience.
+  * Clearly state the source of information (quotes, links), provide author background information (link to the author's profile page), share your operating process or usage experience (pictures, videos), and ensure the factual accuracy of the content.
  ![](https://ahrefs.com/blog/wp-content/uploads/2023/07/image35.png)
- *图片示例：产品评测中展示你实际使用的经验。*
+ *Image example: Show your actual experience in product reviews.*
 
-### 第三步：优化细节，提升体验
+### Step 3: Optimize Details and Enhance Experience
 
-#### 优化图片:
-  * **文件名:** 用描述性的词语命名图片文件，用 `-` 分隔英文单词或拼音 (如 `black-puppy-play-ball.jpg` 或 `heise-xiaogou-wanqiu.jpg`)。
-  * **替代文本 (Alt Text):** 这是给搜索引擎和视障用户看的图片描述。在 HTML 的 `<img>` 标签里添加 `alt` 属性，用简洁的语言描述图片内容，可以自然地包含关键词。 (例如: `<img src="小狗玩球.jpg" alt="一只黑色拉布拉多小狗在草地上玩红色球">`)
-  * **压缩图片:** 图片太大加载会慢。使用工具压缩图片大小，同时尽量保持清晰度。
-  * **工具:** 用 Ahrefs Webmaster Tools (AWT) 的 Site Audit 检查图片是否缺少 Alt 文本。用 TinyPNG 或 iLoveIMG 等在线工具压缩图片。
+#### Optimize pictures:
+  * **File name:** Name picture files with descriptive words, use `-` to separate English words or pinyin (such as `black-puppy-play-ball.jpg` or `heise-xiaogou-wanqiu.jpg`).
+  * **Alternative text (Alt Text):** This is a picture description for search engines and visually impaired users. Add the `alt` attribute to the `<img>` tag in HTML, and use concise language to describe the content of the picture, which can naturally include keywords. (For example: `<img src="puppy-playing-ball.jpg" alt="A black Labrador puppy playing with a red ball on the grass">`)
+  * **Compress pictures:** Large pictures load slowly. Use tools to compress the size of the pictures while trying to maintain clarity.
+  * **Tool:** Use Ahrefs Webmaster Tools (AWT)'s Site Audit to check whether pictures are missing Alt text. Use online tools such as TinyPNG or iLoveIMG to compress pictures.
  ![](https://ahrefs.com/blog/zh/wp-content/uploads/2023/11/On-Page-SEO-1.png)
- *图片示例：好的 Alt 文本示例*
+ *Image example: Good Alt text example*
 
-#### 内部链接:
-  * 在你的文章中，链接到你网站上其他相关的文章或页面。
-  * 这有助于用户发现更多内容，也帮助搜索引擎理解你的网站结构和页面关系。
-  * **工具:** 用 Ahrefs Webmaster Tools (AWT) 的 Site Audit 中的 "Internal link opportunities" 功能，找到可以添加内链的地方。
+#### Internal link:
+  * In your article, link to other relevant articles or pages on your website.
+  * This helps users discover more content and also helps search engines understand your website structure and page relationships.
+  * **Tool:** Use Ahrefs Webmaster Tools (AWT)'s Site Audit's "Internal link opportunities" function to find places where internal links can be added.
  ![](https://ahrefs.com/blog/wp-content/uploads/2023/07/image15-10.png)
- *图片示例：AWT 找到的内部链接机会，提示你可以在 A 页面链接到 B 页面。*
+ *Image example: AWT found internal link opportunities, prompting you to link to page B on page A.*
 
-#### 外部链接:
-  * 在合适的地方，链接到其他高质量、相关的外部网站作为参考或信息来源。
-  * 例如，引用数据时链接到原始报告，推荐工具时链接到官网。
-  * **注意:** 如果是广告或赞助链接，要使用 `rel="nofollow"` 或 `rel="sponsored"` 属性告诉搜索引擎。
+#### External link:
+  * In appropriate places, link to other high-quality, relevant external websites as references or sources of information.
+  * For example, link to the original report when quoting data, and link to the official website when recommending tools.
+  * **Note:** If it is an advertising or sponsored link, use the `rel="nofollow"` or `rel="sponsored"` attribute to tell the search engine.
 
-#### 页面体验:
-   * 加载速度快 (Core Web Vitals)。
-   * 在手机上浏览体验好 (Mobile-Friendly)。
-   * 使用 HTTPS 加密 (安全)。
-   * 没有烦人的弹窗广告 (No intrusive interstitials)。
-  * 这些通常是全站范围的优化，但要保证新页面也符合要求。
-  * **工具:** 使用 Google PageSpeed Insights 测试页面速度和体验。在 Google Search Console 查看相关报告。
+#### Page Experience:
+   * Fast loading speed (Core Web Vitals).
+   * Good browsing experience on mobile phones (Mobile-Friendly).
+   * Use HTTPS encryption (Security).
+   * No annoying pop-up ads (No intrusive interstitials).
+  * These are usually site-wide optimizations, but make sure that new pages also meet the requirements.
+  * **Tool:** Use Google PageSpeed Insights to test page speed and experience. View related reports in Google Search Console.
  ![](https://ahrefs.com/blog/zh/wp-content/uploads/2023/11/On-Page-SEO-3.png)
- *图片示例：Google 的页面体验信号*
+ *Image example: Google's page experience signals*
 
-#### 争取"特殊展示位":
-  * **特色片段 (Featured Snippet):** Google 有时会在搜索结果最顶端显示一个直接回答问题的框。如果你的页面已经排在前几名，并且内容里有对某个问题的直接、简洁的回答 (格式最好参考已有的 Snippet，如列表、段落)，就有机会被选中。
-  * **富媒体片段 (Rich Snippet):** 通过在页面添加 Schema 标记 (一种结构化数据代码)，告诉 Google 你的内容是什么类型 (比如菜谱、FAQ、产品信息)，有时 Google 会在搜索结果中显示更丰富的信息 (如评分、价格、步骤)。
-  * **工具:** 用 Google Search Console 查看哪些词你的排名靠前且 Google 显示了特色片段。用 Schema.dev 的 Schema Generator 生成 Schema 代码。
+#### Fight for "Special Display":
+  * **Featured Snippet:** Google sometimes displays a box that directly answers questions at the top of search results. If your page already ranks in the top few and contains a direct and concise answer to a question in the content (it is best to refer to existing Snippets for the format, such as lists, paragraphs), you have a chance to be selected.
+  * **Rich Snippet:** By adding Schema markup (a structured data code) to the page, tell Google what type your content is (such as recipes, FAQs, product information). Sometimes Google will display richer information in search results ( such as ratings, prices, steps).
+  * **Tool:** Use Google Search Console to see which keywords you rank high for and Google displays featured snippets. Use Schema.dev's Schema Generator to generate Schema code.
  ![](https://ahrefs.com/blog/wp-content/uploads/2023/07/image5-12.png)
- *图片示例：带有评分和评论数量的富媒体片段*
+ *Image example: Rich snippets with ratings and number of reviews*
 
-### 第四步：持续关注和更新
+### Step 4: Continue to Pay Attention and Update
 
-#### 监控效果:
- * 关注你的目标关键词排名变化。
- * 使用 Google Search Console 查看你的页面在 Google 搜索中的表现 (展示次数、点击次数、排名)。
+#### Monitor effectiveness:
+ * Pay attention to the ranking changes of your target keywords.
+ * Use Google Search Console to view the performance of your pages in Google search (impressions, clicks, rankings).
 
-#### 更新内容:
- * SEO 不是一次性工作。定期 (比如一年) 回顾你的内容，检查信息是否过时，链接是否失效，是否有新的信息可以补充。更新内容有助于保持排名。
+#### Update content:
+ * SEO is not a one-time job. Periodically (such as once a year) review your content, check whether the information is outdated, whether the links are invalid, and whether there is new information to supplement. Updating content helps maintain rankings.
  ![](https://ahrefs.com/blog/wp-content/uploads/2023/07/image10-11.png)
- *图片示例：更新内容后带来的流量增长*
+ *Image example: Traffic growth brought by content updates*
 
 ---
 
-### 页面 SEO 工具包
-* [Google Search](https://www.google.com/) (看意图, 看对手)
-* [ChatGPT](https://chat.openai.com/) (想标题/描述点子)
-* [Ahrefs Webmaster Tools (AWT)](https://ahrefs.com/webmaster-tools) (免费检查 H1, 标题, 描述, Alt文本, 找内链机会, 看关键词差距)
-* [TinyPNG](https://tinypng.com/) / [iLoveIMG](https://www.iloveimg.com/compress-image) (在线图片压缩)
-* [Google PageSpeed Insights](https://pagespeed.web.dev/) (测页面速度和体验)
-* [Google Search Console](https://search.google.com/search-console/) (监控排名, 体验问题, 看关键词)
-* [Schema.dev Schema Generator](https://schema.dev/schema-generator/) (生成 Schema 代码)
+### On-Page SEO Toolkit
+* [Google Search](https://www.google.com/) (Look at intention, look at opponents)
+* [ChatGPT](https://chat.openai.com/) (Think about title/description ideas)
+* [Ahrefs Webmaster Tools (AWT)](https://ahrefs.com/webmaster-tools) (Free to check H1, title, description, Alt text, find internal link opportunities, see keyword differences)
+* [TinyPNG](https://tinypng.com/) / [iLoveIMG](https://www.iloveimg.com/compress-image) (Online picture compression)
+* [Google PageSpeed Insights](https://pagespeed.web.dev/) (Test page speed and experience)
+* [Google Search Console](https://search.google.com/search-console/) (Monitor rankings, experience issues, view keywords)
+* [Schema.dev Schema Generator](https://schema.dev/schema-generator/) (Generate Schema code)
 
 </details>
 
 ---
 
 <details>
-<summary><h2>4、外部链接</h2></summary>
+<summary><h2>4. Building External Links (Backlinks)</h2></summary>
 
-### 什么是外部链接 (外链)？
+### What are External Links (Backlinks)?
 
-想象一下，互联网是一个巨大的关系网。当另一个网站 A 在它的页面上放了一个链接，指向你的网站 B，这就形成了一个从 A 到 B 的外部链接。Google 会把这个链接看作是网站 A 给网站 B 的一次"推荐"或"投票"。
+Imagine the Internet as a vast network of relationships. When another website A places a link on its page that points to your website B, this forms an external link from A to B. Google sees this link as a "recommendation" or "vote" from website A for website B.
 
-通常来说，来自**权威高、相关性强**的网站的"投票"更有分量。
+Generally speaking, "votes" from **authoritative and relevant** websites carry more weight.
 
-获得外链的方法很多，我们聚焦在最核心和风险最低的方法上：
+There are many ways to get backlinks, and we focus on the most core and lowest-risk methods:
 
-### 1. 让别人主动链接你 (赚取链接 - Earn Links)
+### 1. Get Others to Link to You Proactively (Earn Links)
 
-这是最理想、最被 Google 鼓励的方式，不那么"快"，但效果最持久。
+This is the most ideal and most Google-encouraged way, which is not so "fast" but has the most lasting effect.
 
-**核心动作:** 创造出**高质量、有独特价值、值得被引用**的内容。这可以是：
- * 一个非常有用的免费在线工具或计算器。
- * 一份深入的、包含独家数据的行业研究报告。
- * 一篇极其详尽、解决用户痛点的终极指南或教程。
- * 一个新颖的观点或独特的资源列表。
+**Core Actions:** Create **high-quality, uniquely valuable, and quotable** content. This can be:
+ * A very useful free online tool or calculator.
+ * An in-depth industry research report containing exclusive data.
+ * An extremely detailed ultimate guide or tutorial that solves users' pain points.
+ * A novel point of view or a unique list of resources.
 
-当你的内容足够好，其他网站的作者在写相关主题时，就可能会发现你的内容并主动链接过来作为参考或推荐。
+When your content is good enough, authors of other websites may discover your content and proactively link to it as a reference or recommendation when writing about related topics.
 
-### 2. 自己"加"一点链接 
+### 2. Add Some Links Yourself
 
-这种方法比较容易操作，但效果有限，要适度。
+This method is easier to operate, but the effect is limited, so do it moderately.
 
-**核心动作:**
- * **行业目录:** 如果你的业务有实体或明确的行业归属 (如本地商家、软件公司)，找到几个**最知名、最权威**的行业垂直网站或商业目录，提交你的网站信息。例如，餐馆可以提交到 Yelp、TripAdvisor；软件可以提交到 Capterra、G2 等。(只做最重要那几个！)
- * **相关社区/论坛/问答:** 偶尔在你**真正参与并熟悉的**行业论坛、贴吧、知乎问答等社区，如果你的某个网页内容确实能帮助回答某个问题或补充某个讨论，可以**自然地**留下链接。**千万不要去不相关的社区发垃圾广告链接！** 这样做很可能被删除，甚至损害声誉。
+**Core Actions:**
+ * **Industry directory:** If your business has a physical or clear industry affiliation (such as a local business or software company), find several **most well-known and authoritative** industry vertical websites or business directories and submit your website information. For example, restaurants can submit to Yelp and TripAdvisor; software can submit to Capterra and G2, etc. (Only do the most important few!)
+ * **Related communities/forums/Q&A:** Occasionally in industry forums, online groups, Zhihu Q&A and other communities where you **truly participate and are familiar**, if the content of one of your web pages can really help answer a question or supplement a discussion, you can **naturally** leave a link. **Never post spam advertising links in irrelevant communities!** Doing so is likely to be deleted or even damage your reputation.
 
-### 3. "要"一点链接
+### 3. "Ask" for some links
 
-直接向其他网站请求链接，成功率通常很低，因为别人为什么要帮你呢？但有几种相对合理的方式：
+Directly requesting links from other websites usually has a low success rate, because why should others help you? But there are a few relatively reasonable ways:
 
-**核心动作:**
- * **客座博客:** 这是相对有效的方式。你为其他相关网站**免费写一篇高质量的文章**，作为回报，你可以在文章作者信息或内容中，包含一两个指向你自己网站的链接。
-  * **怎么做 (简化版):** 找一些你觉得还不错的、和你主题相关的博客，看看他们是否接受投稿 (通常网站页脚或联系页面会有说明)。先从要求不那么高的博客开始尝试，写一篇你擅长且对他们读者有价值的文章。
- * **图片链接 (Image Link Building):** 如果你网站上有原创的图片、图表被其他网站使用了，但他们没有注明来源是你，你可以礼貌地联系他们，请求添加一个指向你原始图片页面的链接。
-* **外展邮件模板:** `web.html` 文件没有提供可以直接复制使用的邮件模板。而且也提到，盲目发邮件请求链接的成功率非常低。如果你要做客座博客，需要根据对方网站的风格和要求，认真撰写你的投稿说明。
+**Core Actions:**
+ * **Guest blogging:** This is a relatively effective method. You write a high-quality article **for free** for other relevant websites. In return, you can include one or two links to your own website in the author information or content of the article.
+  * **How to do it (Simplified Version):** Find some blogs that you think are good and related to your topic, and see if they accept submissions (usually there will be instructions on the website footer or contact page). Start by trying blogs that don't require high standards, and write an article that you are good at and that is valuable to their readers.
+ * **Image Link Building:** If original pictures or charts on your website are used by other websites, but they have not noted that you are the source, you can politely contact them and request that they add a link to your original picture page.
+* **Outreach email template:** The `web.html` file does not provide an email template that can be copied and used directly. It also mentions that the success rate of sending emailsrequesting links blindly is very low. If you want to do guest blogging, you need to carefully write your submission instructions based on the style and requirements of the other party's website.
 
-### 4. "买"链接？别碰！
+### 4. "Buy" links? Don't touch!
 
-**核心警告:** Ahrefs**明确指出不建议购买链接**。
- * 很容易买到对 SEO 没有帮助的垃圾链接，浪费钱。
- * 违反 Google 的站长指南，一旦被发现，你的网站可能会受到惩罚，导致排名大幅下降甚至被移除索引。
+**Core Warning:** Ahrefs **clearly states that buying links is not recommended**.
+ * It is easy to buy junk links that are of no help to SEO and waste money.
+ * It violates Google's Webmaster Guidelines. Once discovered, your website may be penalized, leading to a significant drop in rankings or even removal from the index.
 
-### 5. 维护好你已有的链接
+### 5. Maintain Your Existing Links
 
-辛辛苦苦获得的链接如果丢失了，那就太可惜了。
+It would be a pity if the links you worked so hard to get were lost.
 
-**核心动作:** 检查你网站上是否有页面打不开了 (404 Not Found)，但这些页面以前是有外部链接指向它们的。
-**工具:** 使用免费的 [Ahrefs Webmaster Tools](https://ahrefs.com/webmaster-tools)。
-**步骤:**
- 1. 登录 Ahrefs Webmaster Tools，验证你的网站。
- 2. 进入 Site Explorer (网站分析) 工具。
- 3. 在左侧菜单选择 "Pages" (页面) -> "Best by links" (按反链数量排序)。
- 4. 点击 "HTTP code" 筛选器，选择 "404 not found"。
- 5. 查看报告列表。如果发现有 404 页面后面跟着较高的 "Referring domains" (引用域，表示有多少个网站链接到这个页面) 数量，说明这个失效页面曾经很重要。
- 6. 找到你网站上与这个失效页面内容最相关的新页面 URL (如果没有完全对应的，首页也可以)。
- 7. 设置 **301 重定向**，将这个 404 页面的 URL 永久重定向到你找到的新 URL。这样，指向旧 URL 的链接价值就能传递给新页面了。(如何设置 301 重定向取决于你的网站服务器和平台，你可能需要搜索具体教程，比如 "WordPress 如何设置 301 重定向")。
+**Core Actions:** Check whether there are any pages on your website that cannot be opened (404 Not Found), but these pages had external links pointing to them before.
+**Tool:** Use the free [Ahrefs Webmaster Tools](https://ahrefs.com/webmaster-tools).
+**Steps:**
+ 1. Log in to Ahrefs Webmaster Tools and verify your website.
+ 2. Enter the Site Explorer tool.
+ 3. In the left menu, select "Pages" -> "Best by links".
+ 4. Click the "HTTP code" filter and select "404 not found".
+ 5. View the report list. If you find a 404 page followed by a high "Referring domains" (indicating how many websites link to this page) number, it means that this invalid page used to be important.
+ 6. Find the new page URL on your website that is most relevant to the content of this invalid page (if there is no fully corresponding page, the homepage is also acceptable).
+ 7. Set up a **301 redirect** to permanently redirect the URL of this 404 page to the new URL you found. In this way, the link value pointing to the old URL can be passed on to the new page. (How to set up a 301 redirect depends on your website server and platform, you may need to search for specific tutorials, such as "How to set up a 301 redirect in WordPress").
 * ![](https://ahrefs.com/blog/zh/wp-content/uploads/2021/07/Untitled-84.jpg)
- *图片说明：使用 Ahrefs Site Explorer 的 Best by links 报告配合 404 过滤器，找到带有外部链接的失效页面 (示例来自 Ahrefs 博客)*
+ *Image description: Using Ahrefs Site Explorer's Best by links report with a 404 filter to find invalid pages with external links (example from Ahrefs blog)*
 
 ---
 
-### 外部链接工具包
+### External Link Toolkit
 
-**必备 (免费):**
- * [Ahrefs Webmaster Tools](https://ahrefs.com/webmaster-tools): 查看你自己网站收到的链接，找到带链接的 404 页面进行修复，检查网站技术健康度。
- * [Ahrefs Free Backlink Checker](https://ahrefs.com/zh/backlink-checker): 快速查看任何网站 (包括你的竞争对手) 的前 100 个外部链接，了解他们从哪里获得链接。
- * [Google Alerts](https://www.google.com/alerts): 设置与你的品牌名、网站名、核心主题相关的提醒。当网上出现相关新内容时，你会收到邮件通知。这有助于你发现别人提到了你但没加链接的情况 (可以去请求加上)，或是发现新的链接建设机会。
+**Essential (Free):**
+ * [Ahrefs Webmaster Tools](https://ahrefs.com/webmaster-tools): View the links your own website receives, find 404 pages with links and fix them, and check the technical health of the website.
+ * [Ahrefs Free Backlink Checker](https://ahrefs.com/zh/backlink-checker): Quickly view the top 100 external links of any website (including your competitors) to understand where they are getting links from.
+ * [Google Alerts](https://www.google.com/alerts): Set up alerts related to your brand name, website name, and core themes. You will receive email notifications when new content related to these topics appears online. This helps you find cases where others have mentioned you but haven't added a link (you can request them to add it), or discover new link building opportunities.
 
 </details>
 
 ---
 
 <details>
-<summary><h2>5、其他优化</h2></summary>
+<summary><h2>5. Other Optimizations</h2></summary>
 
-1.  **查收录:** 去 [Google Search Console](https://search.google.com/search-console/about) (免费，后面简称 GSC)，用 "网址检查" 功能看看你的重要页面 Google 能不能找到。
-2.  **修死链:** 如果你改过网址或删过页面，用 [Ahrefs Webmaster Tools](https://ahrefs.com/webmaster-tools) (免费，后面简称 AWT) 找到那些变成 404 但以前有外部链接的页面，把它们用 301 重定向到新页面。
-3.  **适配多语言:** 如果你的网站竞争很大，尝试适配多语言，很多网站只在英文上竞争，你适配多语言后，可以获得更多流量。
-4.  **创建Sitemap:** 创建一个 `sitemap.xml` 文件，列出你网站上所有重要的页面，并提交给 Google Search Console，帮助 Google 更快、更全面地发现你的内容。
-    *   **示例 (sitemap.xml 基础结构):**
+1.  **Check Indexing:** Use the "URL Inspection" tool in [Google Search Console](https://search.google.com/search-console/about) (GSC, free) to ensure Google can find your important pages.
+2.  **Fix Broken Links:** If you've changed URLs or deleted pages, use [Ahrefs Webmaster Tools](https://ahrefs.com/webmaster-tools) (AWT, free) to find pages that are now 404s but previously had external links. Redirect them to the new, relevant pages using 301 redirects.
+3.  **Adapt to Multiple Languages:** If your niche is highly competitive, consider adapting your content to multiple languages. Many websites only compete in English, so translating your content can unlock more traffic.
+4.  **Create a Sitemap:** Create a `sitemap.xml` file listing all important pages on your website and submit it to Google Search Console. This helps Google discover your content faster and more comprehensively.
+    *   **Example (Basic sitemap.xml Structure):**
         ```xml
         <?xml version="1.0" encoding="UTF-8"?>
         <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -582,51 +583,51 @@
            </url>
         </urlset>
         ```
-5.  **Hreflang (多语言标签):** 如果你的网站有多种语言或针对不同地区的内容，使用 `hreflang` 标签告诉 Google 每个页面的不同语言/地区版本，避免内容重复问题，确保向正确的用户展示正确的版本。
-    *   **示例 (HTML `<head>` 中):**
+5.  **Hreflang (Multilingual Tags):** If your website has content in multiple languages or targeting different regions, use `hreflang` tags to tell Google about the different language/regional versions of each page. This prevents duplicate content issues and ensures the correct version is shown to the right users.
+    *   **Example (In HTML `<head>`):**
         ```html
         <link rel="alternate" hreflang="en-us" href="http://www.example.com/en/page.html" />
         <link rel="alternate" hreflang="zh-cn" href="http://www.example.com/zh/page.html" />
         <link rel="alternate" hreflang="x-default" href="http://www.example.com/page.html" />
         ```
-        *(注: `x-default` 用于指定默认或无特定语言区域的版本)*
-6.  **Robots.txt (爬虫协议):** 在网站根目录放一个 `robots.txt` 文件，告诉搜索引擎爬虫哪些页面或目录你不希望它们访问或收录（比如后台管理页面、测试页面等）。
-    *   **示例 (robots.txt 内容):**
+        *(Note: `x-default` is used to specify the default or non-language-specific version)*
+6.  **Robots.txt (Crawler Instructions):** Place a `robots.txt` file in your website's root directory to instruct search engine crawlers which pages or directories you don't want them to access or index (e.g., admin pages, test pages).
+    *   **Example (robots.txt Content):**
         ```
-        User-agent: *          # 应用于所有爬虫
-        Disallow: /admin/       # 禁止访问 /admin/ 目录
-        Disallow: /private.html # 禁止访问 /private.html 文件
-        Allow: /public/        # 明确允许访问 /public/ 目录 (如果上级目录被禁止)
+        User-agent: *          # Applies to all crawlers
+        Disallow: /admin/       # Disallow access to /admin/ directory
+        Disallow: /private.html # Disallow access to /private.html file
+        Allow: /public/        # Explicitly allow access to /public/ directory (if a parent directory is disallowed)
 
-        User-agent: Googlebot   # 只应用于 Google 爬虫
-        Disallow: /tmp/         # 禁止 Google 爬虫访问 /tmp/ 目录
-        Sitemap: http://www.example.com/sitemap.xml # 指明 Sitemap 位置
+        User-agent: Googlebot   # Applies only to Google crawlers
+        Disallow: /tmp/         # Disallow Google crawlers from accessing /tmp/ directory
+        Sitemap: http://www.example.com/sitemap.xml # Specify Sitemap location
         ```
-7.  **Canonical (规范标签):** 如果你的网站上有内容相同或高度相似的多个页面（例如带参数的 URL），使用 `canonical` 标签指定哪个是"官方"版本，避免搜索引擎将它们视为重复内容而分散权重。
-    *   **示例 (HTML `<head>` 中):**
+7.  **Canonical Tags:** If your website has multiple pages with identical or very similar content (e.g., URLs with parameters), use `canonical` tags to specify which is the "official" version. This prevents search engines from treating them as duplicate content and diluting their ranking potential.
+    *   **Example (In HTML `<head>`):**
         ```html
         <link rel="canonical" href="http://www.example.com/product-page" />
         ```
-        *(注: 即使在 `http://www.example.com/product-page?ref=banner` 这个页面上，也要指向不带参数的规范 URL)*
-8.  **Schema Markup (结构化数据):** 在页面代码中添加 Schema 标记，用一种标准化的格式向 Google 解释页面内容的含义（比如这是食谱、产品、FAQ），有助于 Google 理解内容，并可能在搜索结果中显示更丰富的样式（如评分、价格范围等），提升点击率。
-    *   **示例 (JSON-LD 格式，放在 `<script>` 标签中):**
+        *(Note: Even on `http://www.example.com/product-page?ref=banner` this is page, point to the canonical URL without parameters)*
+8.  **Schema Markup (Structured Data):** Add Schema markup to your page code to explain the meaning of the content to Google in a standardized format (e.g., this is a recipe, a product, an FAQ). This helps Google understand the content and may display richer snippets in search results (like ratings, price ranges, etc.), improving click-through rates.
+    *   **Example (JSON-LD Format, placed in a `<script>` tag):**
         ```json
         {
           "@context": "https://schema.org",
           "@type": "FAQPage",
           "mainEntity": [{
             "@type": "Question",
-            "name": "什么是 SEO？",
+            "name": "What is SEO?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "SEO (搜索引擎优化) 是指通过优化网站内容和技术等方面，提高网站在搜索引擎（如 Google）自然搜索结果中排名的过程。"
+              "text": "SEO (Search Engine Optimization) is the process of improving the ranking of a website in the organic search results of search engines (like Google) by optimizing its content and technical aspects."
             }
           },{
             "@type": "Question",
-            "name": "SEO 需要多长时间见效？",
+            "name": "How long does SEO take to show results?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "SEO 的效果显现时间因网站基础、竞争程度、投入资源等多种因素而异，通常需要数周到数月甚至更长时间才能看到明显效果。"
+              "text": "SEO's effects vary depending on website foundation, competition, and resources. Expect weeks to months or longer to see results."
             }
           }]
         }
@@ -637,39 +638,40 @@
 ---
 
 <details>
-<summary><h2>6、SEO 工具</h2></summary>
+<summary><h2>6. SEO Tools</h2></summary>
 
-### 免费工具
-* **[Ahrefs Free Keyword Generator](https://ahrefs.com/keyword-generator):** 用于查找关键词。
-* **[Ahrefs Webmaster Tools (AWT)](https://ahrefs.com/webmaster-tools):** 免费的网站诊断、关键词排名跟踪、内链机会查找、失效链接检查等工具集。
-* **[Ahrefs Free Backlink Checker](https://ahrefs.com/zh/backlink-checker):** 快速查看网站的前 100 个外链。
-* **[Google Keyword Planner](https://ads.google.com/home/tools/keyword-planner/):** Google Ads 内的关键词研究工具 (需要 Google Ads 账号)。
-* **[Google 搜索框建议 (Google Suggest)](https://www.google.com/):** 在 Google 搜索时自动弹出的建议。
-* **[Google 相关搜索](https://www.google.com/):** Google 搜索结果页底部的相关搜索词。
-* **[Answer The Public](https://answerthepublic.com/):** 用于查找围绕关键词的问题和话题 (有每日使用限制)。
-* **[Google Trends](https://trends.google.com/):** 查看关键词的搜索热度和趋势。
-* **[ChatGPT (基础版)](https://chat.openai.com/):** 用于头脑风暴、生成内容、标题等。
-* **[Google Search Console (GSC)](https://search.google.com/search-console/about):** 监控网站在 Google 搜索中的表现、收录情况、技术问题等。
-* **[TinyPNG](https://tinypng.com/) / [iLoveIMG](https://www.iloveimg.com/):** 在线图片压缩工具。
-* **[Google PageSpeed Insights](https://pagespeed.web.dev/):** 测试页面加载速度和用户体验。
-* **[Schema Markup Generator (如 Schema.dev)](https://schema.dev/schema-generator/):** 生成结构化数据代码的工具。
-* **[Google 搜索库 (Search Gallery)](https://developers.google.com/search/docs/appearance/structured-data/search-gallery):** 查看 Google 支持的 Schema 类型和富媒体摘要。
-* **[Google Mobile-Friendly Test](https://search.google.com/test/mobile-friendly):** 测试网页的移动端友好性。
-* **[Google Alerts](https://www.google.com/alerts):** 监控网络上提及特定关键词或品牌的新内容。
-* **[Next.js](https://nextjs.org/) / [Nuxt.js](https://nuxt.com/):** 前端框架，有助于构建 SEO 友好的网站。
-* **行业目录/评论网站 (部分免费):** 如 [Yelp](https://www.yelp.com/)、[TripAdvisor](https://www.tripadvisor.com/)，可以提交基本的商业信息。
+### Free Tools
+* **[Ahrefs Free Keyword Generator](https://ahrefs.com/keyword-generator):** Find keyword ideas.
+* **[Ahrefs Webmaster Tools (AWT)](https://ahrefs.com/webmaster-tools):** Free site audits, keyword rank tracking, internal link opportunities, broken link checks, and more.
+* **[Ahrefs Free Backlink Checker](https://ahrefs.com/zh/backlink-checker):** Quickly view the top 100 backlinks to a website.
+* **[Google Keyword Planner](https://ads.google.com/home/tools/keyword-planner/):** Keyword research tool within Google Ads (requires a Google Ads account).
+* **[Google Suggest](https://www.google.com/):** Autocomplete suggestions in the Google search bar.
+* **[Google Related Searches](https://www.google.com/):** Related search terms at the bottom of Google search results pages.
+* **[Answer The Public](https://answerthepublic.com/):** Find questions and topics surrounding a keyword (has daily usage limits).
+* **[Google Trends](https://trends.google.com/):** View search popularity and trends for keywords.
+* **[ChatGPT (Basic Version)](https://chat.openai.com/):** Brainstorming, content generation, headline creation, and more.
+* **[Google Search Console (GSC)](https://search.google.com/search-console/about):** Monitor website performance in Google Search, indexing status, technical issues, and more.
+* **[TinyPNG](https://tinypng.com/) / [iLoveIMG](https://www.iloveimg.com/):** Online image compression tools.
+* **[Google PageSpeed Insights](https://pagespeed.web.dev/):** Test page loading speed and user experience.
+* **[Schema Markup Generator (e.g., Schema.dev)](https://schema.dev/schema-generator/):** Generate structured data code.
+* **[Google Search Gallery](https://developers.google.com/search/docs/appearance/structured-data/search-gallery):** View supported Schema types and rich snippet examples.
+* **[Google Mobile-Friendly Test](https://search.google.com/test/mobile-friendly):** Test the mobile-friendliness of a webpage.
+* **[Google Alerts](https://www.google.com/alerts):** Monitor the web for new content mentioning specific keywords or brands.
+* **[Next.js](https://nextjs.org/) / [Nuxt.js](https://nuxt.com/):** Frontend frameworks that help build SEO-friendly websites.
+* **Industry Directories/Review Sites (Partially Free):** Such as [Yelp](https://www.yelp.com/), [TripAdvisor](https://www.tripadvisor.com/), can submit basic business information.
 
-### 付费工具
-* **[Ahrefs (核心套件)](https://ahrefs.com/):** 全功能的 SEO 工具平台，提供更深入的关键词研究、竞争对手分析、外链分析、网站诊断等。
-* **[Semrush](https://www.semrush.com/):** 另一个全功能的 SEO 和营销工具平台，功能与 Ahrefs 类似。
-* **[SimilarWeb](https://www.similarweb.com/):** 另一个全功能的 SEO 和营销工具平台，功能与 Ahrefs 类似。
-* **[Answer The Public (付费版)](https://answerthepublic.com/):** 无使用次数限制。
-* **[ChatGPT (高级版)](https://openai.com/chatgpt/):** 功能更强的 AI 模型。
-* **行业目录/评论网站 (高级功能/广告):** 如 [Capterra](https://www.capterra.com/)、[G2](https://www.g2.com/)，可能提供付费推广或高级分析功能。
+### Paid Tools
+* **[Ahrefs (Core Suite)](https://ahrefs.com/):** Full-featured SEO tool platform, providing in-depth keyword research, competitor analysis, backlink analysis, website audits, and more.
+* **[Semrush](https://www.semrush.com/):** Another full-featured SEO and marketing tool platform, with similar functionalities to Ahrefs.
+* **[SimilarWeb](https://www.similarweb.com/):** Another full-featured SEO and marketing tool platform, with similar functionalities to Ahrefs.
+* **[Answer The Public (Paid Version)](https://answerthepublic.com/):** No usage limits.
+* **[ChatGPT (Advanced Version)](https://openai.com/chatgpt/):** More powerful AI model.
+* **Industry Directories/Review Sites (Advanced Features/Advertising):** Such as [Capterra](https://www.capterra.com/), [G2](https://www.g2.com/), may offer paid promotion or advanced analytics features.
 
 </details>
 
 ---
 
-## 最后
-最后夹带一个私货，我开发了一款工具，[SparkNow](https://sparknow.cc/)，一站式帮你启动项目，SEO检测、外链、性能、宣传文稿、宣传图片，都帮你搞定，量大管饱，感兴趣的朋友可以试试，不感兴趣直接忽略就行，掌握上面的 SEO 方法就够了。
+## Finally
+
+One last thing, I developed a tool, [SparkNow](https://sparknow.cc/), to help you start projects in one stop, SEO detection, external links, performance, publicity texts, publicity pictures, are all done for you, with a large amount of guaranteed, interested friends can try it, if you are not interested, just ignore it, mastering the above SEO methods is enough.

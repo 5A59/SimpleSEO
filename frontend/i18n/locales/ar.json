@@ -1,0 +1,24 @@
+{
+  "nav": {
+    "home": "الرئيسية",
+    "guide": "الدليل",
+    "tools": "الأدوات"
+  },
+  "common": {
+    "language": "اللغة",
+    "darkMode": "الوضع الداكن",
+    "lightMode": "الوضع الفاتح"
+  },
+  "home": {
+    "title": "SimpleSEO",
+    "description": "أداة تحسين محركات البحث بسيطة وأنيقة"
+  },
+  "toc": {
+    "title": "جدول المحتويات",
+    "expand": "توسيع",
+    "collapse": "طي"
+  },
+  "footer": {
+    "rights": "جميع الحقوق محفوظة"
+  }
+} 

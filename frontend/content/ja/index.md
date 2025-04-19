@@ -14,20 +14,7 @@ SEOの定義や理論を深く学びたい場合は、[オリジナルのAhrefs 
 
 準備ができたら、さっそく始めましょう。
 
-<!-- ignore start -->
 
-## 目次
-
-*   [超速習版：10分でSEOの基本をマスター](#超速習版10分でseoの基本をマスター)
-*   [詳細版](#詳細版)
-    *   [1. キーワードを見つける](#1キーワードを見つける)
-    *   [2. SEOに強いコンテンツの書き方](#2seoに強いコンテンツの書き方)
-    *   [3. ページSEO](#3ページseo)
-    *   [4. 外部リンク](#4外部リンク)
-    *   [5. その他の最適化](#5その他の最適化)
-    *   [6. SEOツール](#6seoツール)
-
-<!-- ignore end -->
 
 ## 超速習版：10分でSEOの基本をマスター
 
@@ -177,8 +164,8 @@ next.jsやnuxt.jsなどのフレームワークを使用すると、SEO対策の
 
 ## 詳細版
 
-<details>
-<summary><h2>1. キーワードを見つける</h2></summary>
+
+<h2>1. キーワードを見つける</h2>
 
 ### ステップ1：シードキーワードを考える
 
@@ -285,12 +272,12 @@ Google Adsアカウント（無料で登録できます。広告を掲載する�
     *   [Googleキーワードプランナー](https://ads.google.com/home/tools/keyword-planner/)（Adsアカウントが必要、無料）
     *   [Ahrefs Webmaster Tools](https://ahrefs.com/webmaster-tools): より強力な無料ツールセットですが、自分のウェブサイトを所有していることを確認する必要があります。自分のウェブサイトが現在どのキーワードでランキングされているかを確認したり、競争の少ないキーワードを見つけたりすることができます。
 
-</details>
+
 
 ---
 
-<details>
-<summary><h2>2. SEOに強いコンテンツの書き方</h2></summary>
+
+<h2>2. SEOに強いコンテンツの書き方</h2>
 
 ### ステップ1：ユーザーが何を知りたいかを理解する（検索意図の分析）
 
@@ -347,12 +334,12 @@ Google Adsアカウント（無料で登録できます。広告を掲載する�
 
 ---
 
-</details>
+
 
 ---
 
-<details>
-<summary><h2>3. ページSEO</h2></summary>
+
+<h2>3. ページSEO</h2>
 
 ### ステップ1：検索エンジンとユーザーにあなたのページを「理解」させる
 
@@ -481,12 +468,12 @@ Google Adsアカウント（無料で登録できます。広告を掲載する�
 * [Google Search Console](https://search.google.com/search-console/) (ランキングを監視, エクスペリエンスの問題, キーワードを確認)
 * [Schema.dev Schema Generator](https://schema.dev/schema-generator/) (Schemaコードを生成)
 
-</details>
+
 
 ---
 
-<details>
-<summary><h2>4. 外部リンク</h2></summary>
+
+<h2>4. 外部リンク</h2>
 
 ### 外部リンク（被リンク）とは？
 
@@ -558,12 +545,12 @@ Google Adsアカウント（無料で登録できます。広告を掲載する�
 * [Ahrefs Free Backlink Checker](https://ahrefs.com/zh/backlink-checker): あらゆるウェブサイト（競合他社を含む）の最初の100個の外部リンクをすばやく確認し、どこからリンクを獲得しているかを確認します。
 * [Googleアラート](https://www.google.com/alerts): ブランド名、ウェブサイト名、主要テーマに関連するアラートを設定します。オンラインで関連する新しいコンテンツが表示されると、メール通知が届きます。これは、他の人があなたに言及したがリンクを追加していない場合（追加をリクエストできます）、または新しいリンク構築の機会を発見するのに役立ちます。
 
-</details>
+
 
 ---
 
-<details>
-<summary><h2>5. その他の最適化</h2></summary>
+
+<h2>5. その他の最適化</h2>
 
 1.  **インデックス登録の確認：** [Google Search Console](https://search.google.com/search-console/about)（無料、以下GSC）にアクセスし、「URL検査」機能を使って、重要なページがGoogleに認識されているかどうかを確認します。
 2.  **リンク切れの修正：** URLを変更したり、ページを削除したりした場合、[Ahrefs Webmaster Tools](https://ahrefs.com/webmaster-tools)（無料、以下AWT）を使って、404エラーになっているが、以前は外部リンクがあったページを見つけ、それらを新しいページに301リダイレクトします。
@@ -634,12 +621,12 @@ Google Adsアカウント（無料で登録できます。広告を掲載する�
         }
         ```
 
-</details>
+
 
 ---
 
-<details>
-<summary><h2>6. SEOツール</h2></summary>
+
+<h2>6. SEOツール</h2>
 
 ### 無料ツール
 * **[Ahrefs Free Keyword Generator](https://ahrefs.com/keyword-generator):** キーワードを検索するために使用されます。
@@ -669,7 +656,7 @@ Google Adsアカウント（無料で登録できます。広告を掲載する�
 * **[ChatGPT（高級版)](https://openai.com/chatgpt/):** より強力なAIモデル。
 * **業界ディレクトリ/レビューウェブサイト（高度な機能/広告）：** [Capterra](https://www.capterra.com/)、[G2](https://www.g2.com/)など、有料プロモーションまたは高度な分析機能を提供する場合があります。
 
-</details>
+
 
 ---
 

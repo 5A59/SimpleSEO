@@ -1,0 +1,24 @@
+{
+  "nav": {
+    "home": "Trang chủ",
+    "guide": "Hướng dẫn",
+    "tools": "Công cụ"
+  },
+  "common": {
+    "language": "Ngôn ngữ",
+    "darkMode": "Chế độ tối",
+    "lightMode": "Chế độ sáng"
+  },
+  "home": {
+    "title": "SimpleSEO",
+    "description": "Công cụ SEO đơn giản và thanh lịch"
+  },
+  "toc": {
+    "title": "Mục lục",
+    "expand": "Mở rộng",
+    "collapse": "Thu gọn"
+  },
+  "footer": {
+    "rights": "Bản quyền đã được bảo hộ"
+  }
+} 

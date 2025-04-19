@@ -62,6 +62,10 @@ const currentLanguageLabel = computed(() => {
   return lang ? lang.label : '中文'
 })
 
+const currentLanguage = computed(() => {
+  return locale.value
+})
+
 // 检测当前路径中的语言
 onMounted(() => {
   detectCurrentLanguage()
