@@ -20,5 +20,10 @@
   },
   "footer": {
     "rights": "모든 권리 보유"
+  },
+  "meta": {
+    "title": "SimpleSEO - 심플 SEO 가이드 | Simple SEO Guide",
+    "description": "심플 SEO 가이드, 10분 만에 시작하여 더 많은 트래픽을 얻는 데 도움이 됩니다 | Simple SEO Guide, 10 minutes to get started, help you get more traffic",
+    "keywords": "SEO, SEO 방법, SEO 향상 방법, SEO 최적화, 검색 엔진 최적화, 웹사이트 최적화 | SEO, how to do SEO, how to improve SEO, SEO optimization, search engine optimization, website optimization"
   }
 } 

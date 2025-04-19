@@ -1,4 +1,9 @@
 {
+  "meta": {
+    "title": "SimpleSEO - 极简SEO指南 | Simple SEO Guide",
+    "description": "极简SEO指南，10分钟上手、帮助你获取更多流量 | Simple SEO Guide, 10 minutes to get started, help you get more traffic",
+    "keywords": "SEO, 如何做好SEO, 如何提升SEO, SEO优化, 搜索引擎优化, 网站优化 | SEO, how to do SEO, how to improve SEO, SEO optimization, search engine optimization, website optimization"
+  },
   "nav": {
     "home": "首页",
     "about": "关于我",
@@ -11,7 +16,7 @@
   },
   "home": {
     "title": "SimpleSEO",
-    "description": "一个简洁、优雅的SEO工具"
+    "description": "Simple SEO Guide"
   },
   "toc": {
     "title": "目录",
