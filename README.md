@@ -1,6 +1,10 @@
 # Simple SEO Tutorial
 
+<!-- ignore start -->
 
+[English](./Tutorial/en/index.md) | [中文](./Tutorial/zh/index.md) | [Español](./Tutorial/es/index.md) | [Français](./Tutorial/fr/index.md) | [Deutsch](./Tutorial/de/index.md) | [Italiano](./Tutorial/it/index.md) | [Português](./Tutorial/pt/index.md) | [日本語](./Tutorial/ja/index.md) | [한국어](./Tutorial/ko/index.md) | [Русский](./Tutorial/ru/index.md) | [العربية](./Tutorial/ar/index.md) | [हिन्दी](./Tutorial/hi/index.md) | [Bahasa Indonesia](./Tutorial/id/index.md) | [ภาษาไทย](./Tutorial/th/index.md) | [Türkçe](./Tutorial/tr/index.md) | [Tiếng Việt](./Tutorial/vi/index.md) | [Filipino](./Tutorial/tl/index.md) | [বাংলা](./Tutorial/bn/index.md) | [Kiswahili](./Tutorial/sw/index.md)
+
+<!-- ignore end -->
 
 ## Tutorial Goal
 
@@ -18,7 +22,19 @@ You can find the full Ahrefs SEO tutorial here: https://ahrefs.com/blog/zh/how-d
 
 If you're ready, let's begin!
 
+<!-- ignore start -->
 
+## Table of Contents
+* [The Quick Start Guide: Implementable in 10 Minutes](#the-quick-start-guide-implementable-in-10-minutes)
+* [The Detailed Guide](#the-detailed-guide)
+  * [1. Keyword Research](#1-keyword-research)
+  * [2. Crafting SEO Content](#2-crafting-seo-content)
+  * [3. On-Page SEO](#3-on-page-seo)
+  * [4. Building External Links (Backlinks)](#4-building-external-links-backlinks)
+  * [5. Other Optimizations](#5-other-optimizations)
+  * [6. SEO Tools](#6-seo-tools)
+
+<!-- ignore end -->
 
 ## The Quick Start Guide: Implementable in 10 Minutes
 
@@ -168,8 +184,8 @@ Key Considerations for Keyword Selection:
 
 ## The Detailed Guide
 
-
-<h2>1. Keyword Research</h2>
+<details>
+<summary><h2>1. Keyword Research</h2></summary>
 
 ### Step 1: Brainstorm "Seed Keywords"
 
@@ -274,12 +290,12 @@ It will provide search volume estimates and more keyword suggestions. However, t
   * [Google Keyword Planner](https://ads.google.com/home/tools/keyword-planner/) (Requires Ads account, free)
   * [Ahrefs Webmaster Tools](https://ahrefs.com/webmaster-tools): A more powerful free toolset, but you need to verify that you own your website. You can see which keywords your website currently ranks for and discover low-competition keywords, etc.
 
-
+</details>
 
 ---
 
-
-<h2>2. Crafting SEO Content</h2>
+<details>
+<summary><h2>2. Crafting SEO Content</h2></summary>
 
 ### Step 1: Understand What Users Want to See (Analyze Search Intent)
 
@@ -336,12 +352,12 @@ Avoid declining rankings due to outdated content.
 
 ---
 
-
+</details>
 
 ---
 
-
-<h2>3. On-Page SEO</h2>
+<details>
+<summary><h2>3. On-Page SEO</h2></summary>
 
 ### Step 1: Help Search Engines and Users "Understand" Your Page
 
@@ -470,12 +486,12 @@ Match Search Intent.
 * [Google Search Console](https://search.google.com/search-console/) (Monitor rankings, experience issues, view keywords)
 * [Schema.dev Schema Generator](https://schema.dev/schema-generator/) (Generate Schema code)
 
-
+</details>
 
 ---
 
-
-<h2>4. Building External Links (Backlinks)</h2>
+<details>
+<summary><h2>4. Building External Links (Backlinks)</h2></summary>
 
 ### What are External Links (Backlinks)?
 
@@ -547,12 +563,12 @@ It would be a pity if the links you worked so hard to get were lost.
  * [Ahrefs Free Backlink Checker](https://ahrefs.com/zh/backlink-checker): Quickly view the top 100 external links of any website (including your competitors) to understand where they are getting links from.
  * [Google Alerts](https://www.google.com/alerts): Set up alerts related to your brand name, website name, and core themes. You will receive email notifications when new content related to these topics appears online. This helps you find cases where others have mentioned you but haven't added a link (you can request them to add it), or discover new link building opportunities.
 
-
+</details>
 
 ---
 
-
-<h2>5. Other Optimizations</h2>
+<details>
+<summary><h2>5. Other Optimizations</h2></summary>
 
 1.  **Check Indexing:** Use the "URL Inspection" tool in [Google Search Console](https://search.google.com/search-console/about) (GSC, free) to ensure Google can find your important pages.
 2.  **Fix Broken Links:** If you've changed URLs or deleted pages, use [Ahrefs Webmaster Tools](https://ahrefs.com/webmaster-tools) (AWT, free) to find pages that are now 404s but previously had external links. Redirect them to the new, relevant pages using 301 redirects.
@@ -623,12 +639,12 @@ It would be a pity if the links you worked so hard to get were lost.
         }
         ```
 
-
+</details>
 
 ---
 
-
-<h2>6. SEO Tools</h2>
+<details>
+<summary><h2>6. SEO Tools</h2></summary>
 
 ### Free Tools
 * **[Ahrefs Free Keyword Generator](https://ahrefs.com/keyword-generator):** Find keyword ideas.
@@ -658,7 +674,7 @@ It would be a pity if the links you worked so hard to get were lost.
 * **[ChatGPT (Advanced Version)](https://openai.com/chatgpt/):** More powerful AI model.
 * **Industry Directories/Review Sites (Advanced Features/Advertising):** Such as [Capterra](https://www.capterra.com/), [G2](https://www.g2.com/), may offer paid promotion or advanced analytics features.
 
-
+</details>
 
 ---
 

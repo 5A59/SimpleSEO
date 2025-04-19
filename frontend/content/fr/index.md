@@ -1,5 +1,6 @@
 # Tutoriel SEO Ultime pour Débutants (et Experts Paresseux !)
 
+
 ## Notre Engagement
 
 Ce tutoriel a un seul objectif : vous permettre d'atteindre 80% des performances SEO optimales pour votre site, en un minimum de temps. Pas besoin de comprendre pourquoi, ni même de savoir ce qu'est le SEO !

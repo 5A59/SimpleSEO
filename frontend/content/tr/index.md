@@ -1,5 +1,6 @@
 # Basit SEO Rehberi
 
+
 ## Rehberin Amacı
 
 Bu rehberin amacı, okuduktan sonra uygulayarak web sitenizin SEO'sunu %80 seviyesine getirebilmenizi sağlamaktır. Nedenini bilmeseniz bile, hatta SEO'nun ne olduğunu bilmenize gerek kalmadan.

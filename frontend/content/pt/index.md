@@ -1,5 +1,6 @@
 # SEO Simplificado
 
+
 ## Propósito Deste Guia
 
 O objetivo deste guia é fornecer um caminho direto para otimizar seu site para SEO, atingindo um desempenho de 80%, mesmo que você não tenha conhecimento profundo sobre o assunto.

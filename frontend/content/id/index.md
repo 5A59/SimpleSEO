@@ -1,5 +1,6 @@
 # Panduan SEO Kilat
 
+
 ## Tujuan Panduan Ini
 
 Tujuan dari panduan ini adalah, setelah Anda membacanya dan mempraktikkannya, Anda dapat mencapai skor 80 untuk SEO situs web Anda, bahkan jika Anda tidak tahu mengapa, atau bahkan tidak tahu apa itu SEO.

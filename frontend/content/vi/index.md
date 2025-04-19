@@ -1,5 +1,6 @@
 # Hướng Dẫn SEO Tối Giản (Dễ Thực Hiện)
 
+
 ## Tôn Chỉ Của Hướng Dẫn
 
 Mục tiêu của hướng dẫn này là giúp bạn đạt được 80 điểm SEO cho trang web của mình chỉ bằng cách đọc và làm theo, ngay cả khi bạn không biết SEO là gì hoặc tại sao lại phải làm như vậy.

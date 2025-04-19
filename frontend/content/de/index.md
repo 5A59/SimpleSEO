@@ -1,5 +1,6 @@
 # Minimale SEO-Anleitung
 
+
 ## Ziel dieser Anleitung
 
 Das Ziel dieser Anleitung ist, dass du nach dem Lesen und Umsetzen die SEO deiner Website auf 80 Punkte bringen kannst, selbst wenn du nicht weißt, warum, und sogar ohne zu wissen, was SEO überhaupt ist.

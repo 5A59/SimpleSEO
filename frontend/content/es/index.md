@@ -1,5 +1,6 @@
 # Guía SEO Minimalista: Domina el Posicionamiento en Buscadores
 
+
 ## Propósito de esta guía
 
 El objetivo de esta guía es que, después de leerla y seguir los pasos, puedas optimizar el SEO de tu sitio web al 80%, incluso si no sabes por qué, ni qué es el SEO.

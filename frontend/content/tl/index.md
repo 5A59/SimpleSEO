@@ -1,5 +1,6 @@
 # Napakasimpleng Gabay sa SEO (Search Engine Optimization)
 
+
 ## Layunin ng Gabay na Ito
 
 Ang layunin ng gabay na ito ay para, pagkatapos mong basahin at sundin ito, magagawa mo ang SEO ng iyong website sa 80%, kahit hindi mo alam kung bakit, o kahit hindi mo alam kung ano ang SEO.

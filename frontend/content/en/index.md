@@ -1,5 +1,6 @@
 # Simple SEO Tutorial
 
+
 ## Tutorial Goal
 
 The aim of this tutorial is simple: follow the steps, and you'll achieve 80% of your website's SEO potential. You don't need to understand the "why" or even what SEO is – just follow the instructions.

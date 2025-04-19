@@ -1,5 +1,6 @@
 # Guida SEO Essenziale
 
+
 ## Scopo di Questa Guida
 
 L'obiettivo di questa guida è fornirti le istruzioni pratiche per ottimizzare il tuo sito web per la SEO (Search Engine Optimization) fino all'80%, anche se non conosci i dettagli tecnici o cos'è la SEO.
