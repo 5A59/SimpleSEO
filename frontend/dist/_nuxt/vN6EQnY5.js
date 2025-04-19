@@ -1,0 +1,1 @@
+import{_ as s,c as a,o,F as r}from"./HmTOHEq-.js";const t={};function n(e,c){return o(),a("thead",null,[r(e.$slots,"default")])}const l=Object.assign(s(t,[["render",n]]),{__name:"ProseThead"});export{l as default};
