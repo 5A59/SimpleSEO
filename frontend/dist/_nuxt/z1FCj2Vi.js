@@ -1,1 +1,0 @@
-import{_ as s,c as o,o as r,F as n}from"./HmTOHEq-.js";const t={};function c(e,a){return r(),o("li",null,[n(e.$slots,"default")])}const _=Object.assign(s(t,[["render",c]]),{__name:"ProseLi"});export{_ as default};

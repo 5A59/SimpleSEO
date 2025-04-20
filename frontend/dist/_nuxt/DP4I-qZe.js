@@ -1,0 +1,1 @@
+import{_ as s,c as o,o as r,F as n}from"./BC31gEXT.js";const t={};function c(e,a){return r(),o("p",null,[n(e.$slots,"default")])}const l=Object.assign(s(t,[["render",c]]),{__name:"ProseP"});export{l as default};
