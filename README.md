@@ -2,6 +2,8 @@
 
 <!-- ignore start -->
 
+You can read the formatted version of this tutorial [here](https://simpleseo.zyi1024.com).
+
 [English](./Tutorial/en/index.md) | [中文](./Tutorial/zh/index.md) | [Español](./Tutorial/es/index.md) | [Français](./Tutorial/fr/index.md) | [Deutsch](./Tutorial/de/index.md) | [Italiano](./Tutorial/it/index.md) | [Português](./Tutorial/pt/index.md) | [日本語](./Tutorial/ja/index.md) | [한국어](./Tutorial/ko/index.md) | [Русский](./Tutorial/ru/index.md) | [العربية](./Tutorial/ar/index.md) | [हिन्दी](./Tutorial/hi/index.md) | [Bahasa Indonesia](./Tutorial/id/index.md) | [ภาษาไทย](./Tutorial/th/index.md) | [Türkçe](./Tutorial/tr/index.md) | [Tiếng Việt](./Tutorial/vi/index.md) | [Filipino](./Tutorial/tl/index.md) | [বাংলা](./Tutorial/bn/index.md) | [Kiswahili](./Tutorial/sw/index.md)
 
 <!-- ignore end -->
