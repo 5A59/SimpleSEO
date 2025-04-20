@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
+import { nextTick, watch, ref, onMounted, onUnmounted } from 'vue'
 
 const { t } = useI18n()
 
@@ -41,18 +42,73 @@ const toc = ref<TocItem[]>([])
 // 结构化的目录（使用ref而不是computed，这样才能修改其中的状态）
 const structuredToc = ref<StructuredTocItem[]>([])
 
-onMounted(() => {
-  // 获取页面中的标题元素
-  const headings = document.querySelectorAll('article h2, article h3')
-  toc.value = Array.from(headings).map((element) => {
-    const id = element.id
-    const title = element.textContent
-    const level = element.tagName === 'H2' ? 2 : 3
-    return { id, title, level }
-  })
+// MutationObserver相关
+let observer: MutationObserver | null = null
+let debounceTimer: number | null = null
+
+// 处理DOM变化，使用防抖处理
+const handleDomChanges = () => {
+  // 如果已经有定时器，先清除
+  if (debounceTimer) {
+    clearTimeout(debounceTimer)
+  }
   
-  // 构建结构化目录
-  buildStructuredToc()
+  // 设置新的定时器，当DOM停止变化200ms后，执行目录构建
+  debounceTimer = window.setTimeout(() => {
+    // 获取页面中的标题元素
+    const headings = document.querySelectorAll('article h2, article h3')
+    if (headings.length > 0) {
+      toc.value = Array.from(headings).map((element) => {
+        const id = element.id
+        const title = element.textContent
+        const level = element.tagName === 'H2' ? 2 : 3
+        return { id, title, level }
+      })
+      
+      buildStructuredToc()
+      
+      // 目录已构建完成，可以断开观察器
+      if (observer) {
+        observer.disconnect()
+        observer = null
+      }
+    }
+  }, 200)
+}
+
+onMounted(() => {
+  // 等待内容渲染完成后再开始观察DOM变化
+  nextTick(() => {
+    const articleElement = document.querySelector('article')
+    if (articleElement) {
+      // 创建一个观察器实例
+      observer = new MutationObserver(handleDomChanges)
+      
+      // 开始观察文章区域的所有变化
+      observer.observe(articleElement, {
+        childList: true,    // 观察子节点的添加或删除
+        subtree: true,      // 观察所有后代节点
+        characterData: true // 观察文本内容变化
+      })
+      
+      // 初始检查
+      handleDomChanges()
+    }
+  })
+})
+
+onUnmounted(() => {
+  // 组件卸载时断开观察器
+  if (observer) {
+    observer.disconnect()
+    observer = null
+  }
+  
+  // 清除任何未完成的定时器
+  if (debounceTimer) {
+    clearTimeout(debounceTimer)
+    debounceTimer = null
+  }
 })
 
 // 构建结构化目录的方法

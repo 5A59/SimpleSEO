@@ -15,7 +15,7 @@
     
     <!-- 下拉菜单 -->
     <div 
-      v-show="isOpen" 
+      v-if="isOpen" 
       class="absolute right-0 mt-2 py-2 w-32 bg-white dark:bg-gray-800 rounded-md shadow-lg z-50 border border-gray-200 dark:border-gray-700 animate-fade-in"
     >
       <a 
@@ -63,6 +63,7 @@ const currentLanguageLabel = computed(() => {
 })
 
 const currentLanguage = computed(() => {
+  console.log('currentLanguage', locale.value, availableLanguages.value)
   return locale.value
 })
 
